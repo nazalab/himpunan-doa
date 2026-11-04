@@ -1,0 +1,509 @@
+[
+  {
+    "id": 1,
+    "title": "விழித்தெழுந்தவுடன் ஓதும் துஆ",
+    "category": "தினசரி",
+    "source": "Hadis ஸஹீஹ் ஹதீஸ் ( புகாரி & முஸ்லிம்)",
+    "arabic": "اَلْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ",
+    "rumi": "Alhamdulillahilladhi ahyana ba'da ma amatana wa ilaihin-nushur.",
+    "meaning": "எங்களை மரணிக்கச் செய்தபின் உயிர் மீட்ட அல்லாஹ்வுக்கே எல்லாப் புகழும். மேலும் அவனிடமே மீளுதல்.",
+    "fadhilat": "புதிய நாளுக்கு அல்லாஹ்வுக்கு நன்றி செலுத்துதல்."
+  },
+  {
+    "id": 2,
+    "title": "உண்பதற்கு முன் ஓதும் துஆ",
+    "category": "தினசரி",
+    "source": "Hadis (Riwayat Abu Daud & Tirmizi)",
+    "arabic": "اللَّهُمَّ بَارِكْ لَنَا فِيمَا رَزَقْتَنَا وَقِنَا عَذَابَ النَّارِ",
+    "rumi": "Allahumma barik lana fi ma razaqtana wa qina 'adhaban-nar.",
+    "meaning": "யா அல்லாஹ்! நீ எங்களுக்கு வழங்கிய ரிஜ்க்கில் பரக்கத் செய்வாயازாக, மேலும் நரக வேதனையிலிருந்து எங்களைக் காப்பாற்றுவாயாக.",
+    "fadhilat": "உணவில் பரக்கத் மற்றும் நரகப் பாதுகாப்பைப் பெறுதல்."
+  },
+  {
+    "id": 3,
+    "title": "வீட்டை விட்டு வெளியேறும் போது ஓதும் துஆ",
+    "category": "பாதுகாப்பு",
+    "source": "Hadis (Riwayat Abu Daud & Tirmizi)",
+    "arabic": "بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
+    "rumi": "Bismillahi tawakkaltu 'alallah,\nWa la hawla wa la quwwata illa billah.",
+    "meaning": "அல்லாஹ்வின் பெயரால், நான் அல்லாஹ்வின் மீது தவக்குல் வைக்கிறேன்; அல்லாஹ்வின் உதவியின்றி பாபங்களைத் தவிர்க்கவும் நற்செயல்களைச் செய்யவும் சக்தி இல்லை.",
+    "fadhilat": "தெய்வீக பாதுகாப்பு மற்றும் வழிகாட்டலைப் பெறுதல்."
+  },
+  {
+    "id": 4,
+    "title": "பிரார்த்தனை #4: Doa Masuk Tandas",
+    "category": "பாதுகாப்பு",
+    "source": "Hadis ஸஹீஹ் ஹதீஸ் ( புகாரி & முஸ்லிம்)",
+    "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ",
+    "rumi": "Allahumma inni a'udhu bika minal-khubuthi wal-khaba'ith.",
+    "meaning": "பொருள்: Ya Allah, sesungguhnya aku berlindung kepada-Mu daripada syaitan lelaki dan syaitan perempuan."
+  },
+  {
+    "id": 5,
+    "title": "பிரார்த்தனை #5: Doa Selepas Makan",
+    "category": "தினசரி",
+    "source": "Hadis (Riwayat Abu Daud, Tirmizi & Ibnu Majah)",
+    "arabic": "اَلْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مُسْلِمِينَ",
+    "rumi": "Alhamdulillahilladhi at'amana wa saqana wa ja'alana muslimin.",
+    "meaning": "பொருள்: Segala puji bagi Allah yang memberi kami makan dan minum serta menjadikan kami orang-orang Islam."
+  },
+  {
+    "id": 6,
+    "title": "பிரார்த்தனை #6: Doa Masuk Rumah",
+    "category": "பாதுகாப்பு",
+    "source": "Hadis (Riwayat Muslim daripada Jabir bin Abdullah)",
+    "arabic": "بِسْمِ اللَّهِ وَلَجْنَا، وَبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى رَبِّنَا تَوَكَّلْنَا",
+    "rumi": "Bismillahi walajna, wa bismillahi kharajna, wa 'ala rabbina tawakkalna.",
+    "meaning": "பொருள்: Dengan nama Allah kami masuk, dan dengan nama Allah kami keluar, serta kepada Tuhan kami, kami bertawakal."
+  },
+  {
+    "id": 7,
+    "title": "பிரார்த்தனை #7: Doa Memohon Ilmu Yang Berfaedah",
+    "category": "கல்வி",
+    "source": "அல்குர்ஆன் (Surah Taha: 114)",
+    "arabic": "رَبِّ زِدْنِي عِلْمًا وَرْزُقْنِي فَهْمًا",
+    "rumi": "Rabbi zidni 'ilman warzuqni fahman.",
+    "meaning": "பொருள்: Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan dan kurniakanlah aku kefahaman."
+  },
+  {
+    "id": 8,
+    "title": "பிரார்த்தனை #8: Doa Kebaikan Dunia & Akhirat",
+    "category": "தினசரி",
+    "source": "அல்குர்ஆன் (Surah al-Baqarah: 201)",
+    "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+    "rumi": "Rabbana atina fid-dunya hasanatan wa fil-akhirati hasanatan wa qina 'adhaban-nar.",
+    "meaning": "பொருள்: Ya Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, serta peliharalah kami dari azab neraka."
+  },
+  {
+    "id": 9,
+    "title": "பிரார்த்தனை #9: Doa Kedua Ibu Bapa",
+    "category": "கல்வி",
+    "source": "அல்குர்ஆன் (Surah al-Isra': 24)",
+    "arabic": "رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا",
+    "rumi": "Rabbighfir li waliwalidayya warhamhuma kama rabbayani saghira.",
+    "meaning": "பொருள்: Ya Tuhanku, ampunilah dosaku dan dosa kedua ibu bapaku, serta kasihanilah mereka sebagaimana mereka mendidikku sewaktu kecil."
+  },
+  {
+    "id": 10,
+    "title": "பிரார்த்தனை #10: Doa Naik Kenderaan",
+    "category": "பாதுகாப்பு",
+    "source": "அல்குர்ஆன் (Surah az-Zukhruf: 13-14)",
+    "arabic": "سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ",
+    "rumi": "Subhanalladhi sakhara lana hadha wa ma kunna lahu muqrinina wa inna ila rabbina lamunqalibun.",
+    "meaning": "பொருள்: Maha Suci Allah yang telah memudahkan kenderaan ini untuk kami, padahal kami sebelumnya tidak menguasainya, dan sesungguhnya kepada Tuhan kami, kami akan kembali."
+  },
+  {
+    "id": 11,
+    "title": "பிரார்த்தனை #11: Doa Iftitah",
+    "category": "சுன்னத் அமல்கள்",
+    "source": "",
+    "arabic": "اللَّهُ أَكْبَرُ كَبِيرًا وَالْحَمْدُ لِلَّهِ كَثِيرًا وَسُبْحَانَ اللَّهِ بُكْرَةً وَأَصِيلًا. إِنِّي وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَاوَاتِ وَالْأَرْضَ حَنِيفًا مُسْلِمًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ. إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ. لَا شَرِيكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ",
+    "rumi": "Allahu akbaru kabiran wal-hamdu lillahi kathiran wa subhanallahi bukratan wa asila.\n\nInni wajjahtu wajhiya lilladhi fataras-samawati wal-arda hanifan musliman wa ma ana minal-mushrikin.\n\nInna salati wa nusuki wa mahyaya wa mamati lillahi rabbil-'alamin, la sharika lahu wa bidhalika umirtu wa ana minal-muslimin.",
+    "meaning": "பொருள்: Allah Maha Besar dengan sebesar-besarnya. Segala puji bagi Allah dengan pujian yang banyak. Maha Suci Allah pada waktu pagi dan petang. Sesungguhnya aku menghadapkan mukaku kepada Allah yang menciptakan langit dan bumi, dengan cenderung kepada agama yang benar, lagi berserah diri, dan bukanlah aku dari golongan orang-orang yang menyekutukan Allah. Sesungguhnya solatku, ibadatku, hidupku dan matiku hanyalah untuk Allah, Tuhan semesta alam. Tiada sekutu bagi-Nya. Dan dengan itulah aku diperintahkan, dan aku adalah dari golongan orang-orang yang islam.",
+    "showSource": true,
+    "definition": "Membaca Doa Iftitah di dalam solat mempunyai pelbagai kelebihan dan fadhilat yang besar kerana ia merupakan mukadimah atau pembuka perbualan yang penuh bermakna antara hamba dengan Penciptanya sebelum memulakan bacaan Al-Fatihah."
+  },
+  {
+    "id": 12,
+    "title": "பிரார்த்தனை #12: Sayyidul Istighfar",
+    "category": "இஸ்திக்பார்",
+    "source": "Hadis Sahih (Riwayat al-Bukhari daripada Syaddad bin Aus)",
+    "arabic": "اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ منْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لَكَ بِذَنْبِي، فَاغْفِرْ لِي، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
+    "rumi": "Allahumma anta Rabbi la ilaha illa anta, khalaqtani wa ana 'abduka, wa ana 'ala 'ahdika wa wa'dika mastata'tu.\n\nA'udhu bika min sharri ma sana'tu, abu'u laka bini'matika 'alayya, wa abu'u laka bidhanbi.\n\nFaghfir li, fa innahu la yaghfirudh-dhunuba illa anta.",
+    "meaning": "பொருள்: Ya Allah, Engkau adalah Tuhanku, tiada Tuhan selain Engkau. Engkau yang menciptakanku dan aku adalah hamba-Mu. Aku menetap atas perjanjian-Mu dan janji-Mu sekadar kesanggupanku. Aku berlindung kepada-Mu dari kejahatan yang aku perbuat. Aku akui nikmat-Mu kepadaku dan aku akui dosaku, maka ampunilah aku. Sesungguhnya tiada yang dapat mengampuni dosa-dosa melainkan Engkau."
+  },
+  {
+    "id": 13,
+    "title": "பிரார்த்தனை #13: Doa Jodoh & Keturunan (Zuriat Soleh)",
+    "category": "தினசரி",
+    "source": "அல்குர்ஆன் (Surah al-Furqan: 74)",
+    "arabic": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
+    "rumi": "Rabbana hab lana min azwajina wa dhurriyyatina qurrota a'yunin waj'alna lil-muttaqina imama.",
+    "meaning": "பொருள்: Ya Tuhan kami, anugerahkanlah kepada kami pasangan kami dan keturunan kami sebagai penyenang hati (penyejuk mata), dan jadikanlah kami imam bagi orang-orang yang bertakwa."
+  },
+  {
+    "id": 14,
+    "title": "பிரார்த்தனை #14: Doa Mensyukuri Nikmat",
+    "category": "தினசரி",
+    "source": "அல்குர்ஆன் (Surah an-Naml: 19)",
+    "arabic": "رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ",
+    "rumi": "Rabbi awzi'ni an asykura ni'matakallati an'amta 'alayya wa 'ala walidayya wa an a'mala salihan tardahu.\n\nWa adkhilni bi rahmatika fi 'ibadikas-salihin.",
+    "meaning": "பொருள்: Ya Tuhanku, berilah aku petunjuk agar aku dapat mensyukuri nikmat-Mu yang telah Engkau kurniakan kepadaku dan kepada kedua ibu bapaku, dan agar aku dapat beramal soleh yang Engkau redai, dan masukkanlah aku dengan rahmat-Mu ke dalam golongan hamba-hamba-Mu yang soleh."
+  },
+  {
+    "id": 15,
+    "title": "பிரார்த்தனை #15: Wirid Selepas Solat",
+    "category": "திக்ர்",
+    "source": "Amalan Tradisi & Panduan JAKIM Malaysia",
+    "arabic": "أَسْتَغْفِرُ اللهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الحَيُّ الْقَيُّومُ وَأَتُوْبُ إِلَيْهِ (3×)\n\nلَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ (10×)\n\nاللَّهُمَّ أَجِرْنَا مِنَ النَّارِ (7×)\n\nاللَّهُمَّ أَنْتَ السَّلَامُ، وَمِنْكَ السَّلَامُ، وَإِلَيْكَ يَعُودُ السَّلَامُ، فَحَيِّنَا رَبَّنَا بِالسَّلَامِ، وَأَدْخِلْنَا الْجَنَّةَ دَارَ السَّلَامِ، تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ.\n\nسُبْحَانَ اللهِ (33×) | الْحَمْدُ لِلَّهِ (33×) | اللَّهُ أَكْبَرُ (33×)",
+    "rumi": "Astaghfirullahal-'azim alladzi la ilaha illa huwal-hayyul-qayyumu wa atubu ilaih (3x).\n\nLa ilaha illallahu wahdahu la sharika lah, lahul-mulku wa lahul-hamdu yuhyi wa yumitu wa huwa 'ala kulli shay-in qadir (10x).\n\nAllahumma ajirna minan-nar (7x).\n\nAllahumma antas-salam, wa minkas-salam, wa ilaika ya'udus-salam, fahayyina rabbana bis-salam, wa adkhilnal-jannata daras-salam, tabarakta rabbana wa ta'alaita ya dhal-jalali wal-ikram.\n\nSubhanallah (33x), Alhamdulillah (33x), Allahu Akbar (33x).",
+    "meaning": "பொருள்: 1. Aku memohon ampun kepada Allah Yang Maha Agung yang tiada Tuhan selain Dia, Yang Hidup lagi Berdiri Sendiri, dan aku bertaubat kepada-Nya (3x).\n\n2. Tiada Tuhan melainkan Allah Yang Esa, tiada sekutu bagi-Nya. Bagi-Nya kerajaan dan bagi-Nya pujian, yang menghidupkan dan mematikan, dan Dia Maha Kuasa atas tiap-tiap sesuatu (10x).\n\n3. Ya Allah, peliharalah kami dari api neraka (7x).\n\n4. Ya Allah, Engkaulah Al-Salam, daripada-Mu kesejahteraan, kepada-Mu kembalinya kesejahteraan, hidupkanlah kami wahai Tuhan kami dengan sejahtera, dan masukkanlah kami ke syurga Darus-Salam. Maha Suci Engkau wahai Tuhan kami dan Maha Tinggi Engkau, wahai Yang Mempunyai Kebesaran dan Kemuliaan.\n\n5. Bertasbih (33x), Bertahmid (33x), Bertakbir (33x)."
+  },
+  {
+    "id": 16,
+    "title": "பிரார்த்தனை #16: Doa Khatam Al-Quran",
+    "category": "சபை",
+    "source": "Amalan Tradisi Nusantara & Kitab Doa",
+    "arabic": "اللَّهُمَّ ارْحَمْنِي بِالْقُرْءَانِ وَاجْعَلْهُ لِي إِمَامًا وَنُورًا وَهُدًى وَرَحْمَةً. اللَّهُمَّ ذَكِّرْنِي مِنْهُ مَا نَسِيتُ وَعَلِّمْنِي مِنْهُ مَا جَهِلْتُ وَارْزُقْنِي تِلَاوَتَهُ آنَاءَ اللَّيْلِ وَأَطْرَافَ النَّهَارِ وَاجْعَلْهُ لِي حُجَّةً يَا رَبَّ الْعَالَمِينَ.",
+    "rumi": "Allahummarhamni bil-quran, waj'alhu li imaman wa nuran wa hudan wa rahmah.\n\nAllahumma dhakkirni minhu ma nasitu wa 'allimni minhu ma jahiltu warzuqni tilawatahu ana'al-laili wa atrafan-nahar, waj'alhu li hujjatan ya rabbal-'alamin.",
+    "meaning": "பொருள்: Ya Allah, rahmatilah aku dengan Al-Quran, dan jadikanlah ia bagiku sebagai pemimpin, cahaya, petunjuk, dan rahmat. Ya Allah, ingatkanlah aku apa yang aku lupa daripadanya, ajarilah aku apa yang aku tidak tahu daripadanya, dan kurniakanlah aku bacaannya pada waktu malam dan siang, serta jadikanlah ia hujah (pembela) bagiku, wahai Tuhan semesta alam."
+  },
+  {
+    "id": 17,
+    "title": "பிரார்த்தனை #17: Langkah 1: Takbiratul Ihram & Niat",
+    "category": "தொழுகை ஓதுதல்கள்",
+    "source": "Rukun Fardhu Solat",
+    "arabic": "اللَّهُ أَكْبَرُ",
+    "rumi": "Allahu Akbar.",
+    "meaning": "பொருள்: Allah Maha Besar (disusuli dengan niat solat di dalam hati mengikut waktu solat fardhu masing-masing)."
+  },
+  {
+    "id": 18,
+    "title": "பிரார்த்தனை #18: Langkah 2: Doa Iftitah",
+    "category": "தொழுகை ஓதுதல்கள்",
+    "source": "Hadis Sahih (Riwayat Muslim daripada Ali bin Abi Talib)",
+    "arabic": "اللَّهُ أَكْبَرُ كَبِيرًا وَالْحَمْدُ لِلَّهِ كَثِيرًا وَسُبْحَانَ اللَّهِ بُكْرَةً وَأَصِيلًا. إِنِّي وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَاوَاتِ وَالْأَرْضَ حَنِيفًا مُسْلِمًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ. إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ. لَا شَرِيكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ",
+    "rumi": "Allahu akbaru kabiran wal-hamdu lillahi kathiran wa subhanallahi bukratan wa asila.\n\nInni wajjahtu wajhiya lilladhi fataras-samawati wal-arda hanifan musliman wa ma ana minal-mushrikin.\n\nInna salati wa nusuki wa mahyaya wa mamati lillahi rabbil-'alamin, la sharika lahu wa bidhalika umirtu wa ana minal-muslimin.",
+    "meaning": "பொருள்: Allah Maha Besar dengan sebesar-besarnya. Segala puji bagi Allah dengan pujian yang banyak. Maha Suci Allah pada waktu pagi dan petang. Sesungguhnya aku menghadapkan mukaku kepada Allah yang menciptakan langit dan bumi, dengan cenderung kepada agama yang benar, lagi berserah diri, dan bukanlah aku dari golongan orang-orang yang menyekutukan Allah. Sesungguhnya solatku, ibadatku, hidupku dan matiku hanyalah untuk Allah, Tuhan semesta alam. Tiada sekutu bagi-Nya. Dan dengan itulah aku diperintahkan, dan aku adalah dari golongan orang-orang yang islam."
+  },
+  {
+    "id": 19,
+    "title": "பிரார்த்தனை #19: Langkah 3: Bacaan Ruku'",
+    "category": "தொழுகை ஓதுதல்கள்",
+    "source": "Sunat Ab'ad / Sunat Solat",
+    "arabic": "سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ",
+    "rumi": "Subhana rabbiyal-'azim wa bihamdih (dibaca 3 kali).",
+    "meaning": "பொருள்: Maha Suci Tuhanku Yang Maha Agung serta memujilah aku kepada-Nya."
+  },
+  {
+    "id": 20,
+    "title": "பிரார்த்தனை #20: Langkah 4: Bacaan I'tidal (Bangkit Ruku')",
+    "category": "தொழுகை ஓதுதல்கள்",
+    "source": "Rukun Solat",
+    "arabic": "سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ، رَبَّنَا وَلَكَ الْحَمْدُ",
+    "rumi": "Sami'allahu liman hamidah, Rabbana wa lakal-hamd.",
+    "meaning": "பொருள்: Allah mendengar sesiapa yang memuji-Nya. Wahai Tuhan kami, bagi-Mu segala puji."
+  },
+  {
+    "id": 21,
+    "title": "பிரார்த்தனை #21: Langkah 5: Bacaan Sujud",
+    "category": "தொழுகை ஓதுதல்கள்",
+    "source": "Rukun Solat",
+    "arabic": "سُبْحَانَ رَبِّيَ الأَعْلَى وَبِحَمْدِهِ",
+    "rumi": "Subhana rabbiyal-a'la wa bihamdih (dibaca 3 kali).",
+    "meaning": "பொருள்: Maha Suci Tuhanku Yang Maha Tinggi serta memujilah aku kepada-Nya."
+  },
+  {
+    "id": 22,
+    "title": "பிரார்த்தனை #22: Langkah 6: Duduk di Antara Dua Sujud",
+    "category": "தொழுகை ஓதுதல்கள்",
+    "source": "Rukun Solat",
+    "arabic": "رَبِّ اغْفِرْ لِي وَارْحَمْنِي وَاجْبُرْنِي وَارْفَعْنِي وَارْزُقْنِي وَهْدِنِي وَعَافِنِي وَاعْفُ عَنِّي",
+    "rumi": "Rabbighfir li, warhamni, wajburnni, warfa'ni, warzuqni, wahdini, wa 'afini, wa'fu 'anni.",
+    "meaning": "பொருள்: Ya Tuhanku, ampunilah dosaku, rahmatilah aku, cukupkanlah aku, angkatlah darjatku, berikanlah aku rezeki, berikanlah aku petunjuk, sihatkanlah aku, dan ampunilah aku."
+  },
+  {
+    "id": 23,
+    "title": "பிரார்த்தனை #23: Langkah 7: Tahiyyat Awal",
+    "category": "தொழுகை ஓதுதல்கள்",
+    "source": "Sunat Ab'ad Solat",
+    "arabic": "التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ. أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ.",
+    "rumi": "At-tahiyyatul mubarakatus-salawatut-tayyibatu lillah. Assalamu 'alaika ayyuhan-nabiyyu wa rahmatullahi wa barakatuh. Assalamu 'alaina wa 'ala 'ibadillahis-salihin. Asyhadu an la ilaha illallah, wa asyhadu anna Muhammadan rasulullah.",
+    "meaning": "பொருள்: Segala penghormatan, keberkatan, solat, dan kebaikan adalah bagi Allah. Sejahtera ke atas engkau, wahai Nabi, dan rahmat Allah serta berkat-Nya. Sejahtera ke atas kami dan ke atas hamba-hamba Allah yang soleh. Aku bersaksi bahawa tiada Tuhan melainkan Allah, dan aku bersaksi bahawa Muhammad adalah Pesuruh Allah."
+  },
+  {
+    "id": 24,
+    "title": "பிரார்த்தனை #24: Langkah 8: Tahiyyat Akhir",
+    "category": "தொழுகை ஓதுதல்கள்",
+    "source": "Rukun Solat",
+    "arabic": "التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ. أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ. اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى سَيِّدِنَا إِبْرَاهِيمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيمَ، وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى سَيِّدِنَا إِبْرَاهِيمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيمَ، فِي الْعَالَمِينَ إِنَّكَ حَمِيدٌ مَجِيدٌ.",
+    "rumi": "At-tahiyyatul mubarakatus-salawatut-tayyibatu lillah. Assalamu 'alaika ayyuhan-nabiyyu wa rahmatullahi wa barakatuh. Assalamu 'alaina wa 'ala 'ibadillahis-salihin. Asyhadu an la ilaha illallah, wa asyhadu anna Muhammadan rasulullah.\n\nAllahumma salli 'ala sayyidina Muhammad wa 'ala ali sayyidina Muhammad, kama sallaita 'ala sayyidina Ibrahim wa 'ala ali sayyidina Ibrahim. Wa barik 'ala sayyidina Muhammad wa 'ala ali sayyidina Muhammad, kama barakta 'ala sayyidina Ibrahim wa 'ala ali sayyidina Ibrahim, fil-'alamina innaka hamidun majid.",
+    "meaning": "பொருள்: Segala penghormatan, keberkatan, solat, dan kebaikan adalah bagi Allah. Sejahtera ke atas engkau, wahai Nabi... (hingga akhir selawat Ibrahimiyah): Ya Allah, berilah selawat kepada Nabi Muhammad dan keluarganya, sebagaimana Engkau berselawat ke atas Nabi Ibrahim dan keluarganya, dan berkatilah Nabi Muhammad dan keluarganya, sebagaimana Engkau memberkati Nabi Ibrahim dan keluarganya di alam semesta, sesungguhnya Engkau Maha Terpuji lagi Maha Mulia."
+  },
+  {
+    "id": 25,
+    "title": "பிரார்த்தனை #25: Langkah 9: Salam Penutup Solat",
+    "category": "தொழுகை ஓதுதல்கள்",
+    "source": "Rukun Solat",
+    "arabic": "السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ",
+    "rumi": "Assalamu'alaikum warahmatullah (palingkan muka ke kanan dan ke kiri).",
+    "meaning": "பொருள்: Sejahtera dan rahmat Allah ke atas kamu."
+  },
+  {
+    "id": 26,
+    "title": "பிரார்த்தனை #26: Doa Memohon Kesembuhan",
+    "category": "சுகாதாரம்",
+    "source": "Hadis ஸஹீஹ் ஹதீஸ் ( புகாரி & முஸ்லிம்)",
+    "arabic": "اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَاسَ، اشْفِ أَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا",
+    "rumi": "Allahumma rabban-nas, adhibil-basa, ishfi antas-safi, la shifa'a illa shifa'uk, shifa'an la yughadiru saqama.",
+    "meaning": "பொருள்: Ya Allah, Tuhan sekalian manusia, hilangkanlah kesakitan, sembuhkanlah kerana Engkau Maha Penyembuh, tiada kesembuhan melainkan kesembuhan daripada-Mu, kesembuhan yang tidak meninggalkan sebarang penyakit."
+  },
+  {
+    "id": 27,
+    "title": "பிரார்த்தனை #27: Niat Solat Subuh",
+    "category": [
+      "தொழுகை நிய்யத்",
+      "பர்ளு தொழுகை"
+    ],
+    "source": "Panduan Fardhu Ain & Ibadah Solat",
+    "arabic": "أُصَلِّي فَرْضَ الصُّبْحِ رَكَعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لِلَّهِ تَعَالَى",
+    "rumi": "Usalli fardhas-subhi rak'ataini mustaqbilal-qiblati ada'an lillahi ta'ala.",
+    "meaning": "பொருள்: Sahaja aku solat fardhu Subuh dua rakaat mengadap qiblat tunai kerana Allah Taala."
+  },
+  {
+    "id": 28,
+    "title": "பிரார்த்தனை #28: Niat Solat Zohor",
+    "category": [
+      "தொழுகை நிய்யத்",
+      "பர்ளு தொழுகை"
+    ],
+    "source": "Panduan Fardhu Ain & Ibadah Solat",
+    "arabic": "أُصَلِّي فَرْضَ الظُّهْرِ أَرْبَعَ رَكَعَاتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لِلَّهِ تَعَالَى",
+    "rumi": "Usalli fardhaz-zuhri arba'a raka'atin mustaqbilal-qiblati ada'an lillahi ta'ala.",
+    "meaning": "பொருள்: Sahaja aku solat fardhu Zohor empat rakaat mengadap qiblat tunai kerana Allah Taala."
+  },
+  {
+    "id": 29,
+    "title": "பிரார்த்தனை #29: Niat Solat Asar",
+    "category": [
+      "தொழுகை நிய்யத்",
+      "பர்ளு தொழுகை"
+    ],
+    "source": "Panduan Fardhu Ain & Ibadah Solat",
+    "arabic": "أُصَلِّي فَرْضَ الْعَصْرِ أَرْبَعَ رَكَعَاتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لِلَّهِ تَعَالَى",
+    "rumi": "Usalli fardhal-'asri arba'a raka'atin mustaqbilal-qiblati ada'an lillahi ta'ala.",
+    "meaning": "பொருள்: Sahaja aku solat fardhu Asar empat rakaat mengadap qiblat tunai kerana Allah Taala."
+  },
+  {
+    "id": 30,
+    "title": "பிரார்த்தனை #30: Niat Solat Maghrib",
+    "category": [
+      "தொழுகை நிய்யத்",
+      "பர்ளு தொழுகை"
+    ],
+    "source": "Panduan Fardhu Ain & Ibadah Solat",
+    "arabic": "أُصَلِّي فَرْضَ الْمَغْرِبِ ثَلَاثَ رَكَعَاتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لِلَّهِ تَعَالَى",
+    "rumi": "Usalli fardhal-maghribi thalatha raka'atin mustaqbilal-qiblati ada'an lillahi ta'ala.",
+    "meaning": "பொருள்: Sahaja aku solat fardhu Maghrib tiga rakaat mengadap qiblat tunai kerana Allah Taala."
+  },
+  {
+    "id": 31,
+    "title": "பிரார்த்தனை #31: Niat Solat Isyak",
+    "category": [
+      "தொழுகை நிய்யத்",
+      "பர்ளு தொழுகை"
+    ],
+    "source": "Panduan Solat",
+    "arabic": "أُصَلِّي فَرْضَ الْعِشَاءِ أَرْبَعَ رَكَعَاتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لِلَّهِ تَعَالَى",
+    "rumi": "Usalli fardhal-'isha'i arba'a raka'atin mustaqbilal-qiblati ada'an lillahi ta'ala.",
+    "meaning": "பொருள்: Sahaja aku solat fardhu Isyak empat rakaat mengadap qiblat tunai kerana Allah Taala.",
+    "showSource": true
+  },
+  {
+    "id": 32,
+    "title": "பிரார்த்தனை #32: Niat Solat Sunat Dhuha",
+    "category": [
+      "தொழுகை நிய்யத்",
+      "சுன்னத் தொழுகை"
+    ],
+    "source": "Panduan Solat Sunat",
+    "arabic": "أُصَلِّي سُنَّةَ الضُّحَى رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatad-duha rak'ataini lillahi ta'ala.",
+    "meaning": "பொருள்: Sahaja aku solat sunat Dhuha dua rakaat kerana Allah Taala."
+  },
+  {
+    "id": 33,
+    "title": "பிரார்த்தனை #33: Niat Solat Sunat Tahajjud",
+    "category": [
+      "தொழுகை நிய்யத்",
+      "சுன்னத் தொழுகை"
+    ],
+    "source": "Panduan Solat Sunat",
+    "arabic": "أُصَلِّي سُنَّةَ التَّهَجُّدِ رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatat-tahajjud rak'ataini lillahi ta'ala.",
+    "meaning": "பொருள்: Sahaja aku solat sunat Tahajjud dua rakaat kerana Allah Taala."
+  },
+  {
+    "id": 34,
+    "title": "பிரார்த்தனை #34: Niat Solat Sunat Hajat",
+    "category": [
+      "தொழுகை நிய்யத்",
+      "சுன்னத் தொழுகை"
+    ],
+    "source": "Panduan Solat Sunat",
+    "arabic": "أُصَلِّي سُنَّةَ الْحَاجَةِ رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatal-hajati rak'ataini lillahi ta'ala.",
+    "meaning": "பொருள்: Sahaja aku solat sunat Hajat dua rakaat kerana Allah Taala."
+  },
+  {
+    "id": 35,
+    "title": "பிரார்த்தனை #35: Niat Solat Sunat Witir",
+    "category": [
+      "தொழுகை நிய்யத்",
+      "சுன்னத் தொழுகை"
+    ],
+    "source": "Panduan Solat Sunat",
+    "arabic": "أُصَلِّي سُنَّةَ الْوِتْرِ رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatal-witri rak'ataini lillahi ta'ala.",
+    "meaning": "பொருள்: Sahaja aku solat sunat Witir dua rakaat kerana Allah Taala."
+  },
+  {
+    "id": 36,
+    "title": "பிரார்த்தனை #36: Niat Solat Sunat Rawatib Qobliyah Subuh",
+    "category": [
+      "தொழுகை நிய்யத்",
+      "சுன்னத் தொழுகை",
+      "ரவாதிப்"
+    ],
+    "source": "Panduan Solat Sunat Rawatib",
+    "arabic": "أُصَلِّي سُنَّةَ الصُّبْحِ قَبْلِيَّةً رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatas-subhi qabliyyatan rak'ataini lillahi ta'ala.",
+    "meaning": "பொருள்: Sahaja aku solat sunat qobliyah Subuh dua rakaat kerana Allah Taala."
+  },
+  {
+    "id": 37,
+    "title": "பிரார்த்தனை #37: Niat Solat Sunat Rawatib Qobliyah Zohor",
+    "category": [
+      "தொழுகை நிய்யத்",
+      "சுன்னத் தொழுகை",
+      "ரவாதிப்"
+    ],
+    "source": "Panduan Solat Sunat Rawatib",
+    "arabic": "أُصَلِّي سُنَّةَ الظُّهْرِ قَبْلِيَّةً رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatal-zuhri qabliyyatan rak'ataini lillahi ta'ala.",
+    "meaning": "பொருள்: Sahaja aku solat sunat qobliyah Zohor dua rakaat kerana Allah Taala."
+  },
+  {
+    "id": 38,
+    "title": "பிரார்த்தனை #38: Niat Solat Sunat Rawatib Ba'diyah Zohor",
+    "category": [
+      "தொழுகை நிய்யத்",
+      "சுன்னத் தொழுகை",
+      "ரவாதிப்"
+    ],
+    "source": "Panduan Solat Sunat Rawatib",
+    "arabic": "أُصَلِّي سُنَّةَ الظُّهْرِ بَعْدِيَّةً رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatal-zuhri ba'diyatan rak'ataini lillahi ta'ala.",
+    "meaning": "பொருள்: Sahaja aku solat sunat ba'diyah Zohor dua rakaat kerana Allah Taala."
+  },
+  {
+    "id": 39,
+    "title": "பிரார்த்தனை #39: Niat Solat Sunat Rawatib Ba'diyah Maghrib",
+    "category": [
+      "தொழுகை நிய்யத்",
+      "சுன்னத் தொழுகை",
+      "ரவாதிப்"
+    ],
+    "source": "Panduan Solat Sunat Rawatib",
+    "arabic": "أُصَلِّي سُنَّةَ الْمَغْرِبِ بَعْدِيَّةً رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatal-maghribi ba'diyatan rak'ataini lillahi ta'ala.",
+    "meaning": "பொருள்: Sahaja aku solat sunat ba'diyah Maghrib dua rakaat kerana Allah Taala."
+  },
+  {
+    "id": 40,
+    "title": "பிரார்த்தனை #40: Niat Solat Sunat Rawatib Ba'diyah Isyak",
+    "category": [
+      "தொழுகை நிய்யத்",
+      "சுன்னத் தொழுகை",
+      "ரவாதிப்"
+    ],
+    "source": "Panduan Solat Sunat Rawatib",
+    "arabic": "أُصَلِّي سُنَّةَ الْعِشَاءِ بَعْدِيَّةً رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatal-'isha'i ba'diyatan rak'ataini lillahi ta'ala.",
+    "meaning": "பொருள்: Sahaja aku solat sunat ba'diyah Isyak dua rakaat kerana Allah Taala."
+  },
+  {
+    "id": 41,
+    "title": "பிரார்த்தனை #41: Niat Solat Sunat Rawatib Qobliyah Asar",
+    "category": [
+      "தொழுகை நிய்யத்",
+      "சுன்னத் தொழுகை",
+      "ரவாதிப்"
+    ],
+    "source": "Panduan Solat Sunat Rawatib",
+    "arabic": "أُصَلِّي سُنَّةَ الْعَصْرِ قَبْلِيَّةً رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatal-'asri qabliyyatan rak'ataini lillahi ta'ala.",
+    "meaning": "பொருள்: Sahaja aku solat sunat qobliyah Asar dua rakaat kerana Allah Taala."
+  },
+  {
+    "id": 42,
+    "title": "பிரார்த்தனை #42: Niat Solat Sunat Rawatib Qobliyah Maghrib",
+    "category": [
+      "தொழுகை நிய்யத்",
+      "சுன்னத் தொழுகை",
+      "ரவாதிப்"
+    ],
+    "source": "Panduan Solat Sunat Rawatib",
+    "arabic": "أُصَلِّي سُنَّةَ الْمَغْرِبِ قَبْلِيَّةً رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatal-maghribi qabliyyatan rak'ataini lillahi ta'ala.",
+    "meaning": "பொருள்: Sahaja aku solat sunat qobliyah Maghrib dua rakaat kerana Allah Taala."
+  },
+  {
+    "id": 43,
+    "title": "பிரார்த்தனை #43: Niat Solat Sunat Rawatib Qobliyah Isyak",
+    "category": [
+      "தொழுகை நிய்யத்",
+      "சுன்னத் தொழுகை",
+      "ரவாதிப்"
+    ],
+    "source": "Panduan Solat Sunat Rawatib",
+    "arabic": "أُصَلِّي سُنَّةَ الْعِشَاءِ قَبْلِيَّةً رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatal-'isha'i qabliyyatan rak'ataini lillahi ta'ala.",
+    "meaning": "பொருள்: Sahaja aku solat sunat qobliyah Isyak dua rakaat kerana Allah Taala."
+  },
+  {
+    "id": 44,
+    "title": "பிரார்த்தனை #44: Solat istikharah",
+    "category": "சுன்னத் தொழுகை",
+    "source": "Panduan Solat",
+    "arabic": "أُصَلِّي سُنَّةَ الاِسْتِخَارَةِ رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usolli sunnatal istikharati rak'ataini lillahi Ta'ala.",
+    "meaning": "பொருள்: Sahaja aku solat sunat istikharah dua rakaat kerana Allah Taala.",
+    "showSource": true,
+    "definition": "Solat Istikharah adalah solat sunat dua rakaat yang dilakukan untuk memohon petunjuk dan pilihan terbaik daripada Allah SWT(seperti pemilihan kerjaya, pengajian, atau jodoh)."
+  },
+  {
+    "id": 45,
+    "title": "பிரார்த்தனை #45: Doa Mendapatkan Zuriat (Doa Nabi Zakaria a.s.)",
+    "category": "சுகாதாரம்",
+    "source": "அல்குர்ஆன் (Surah Ali 'Imran: 38)",
+    "arabic": "رَبِّ هَبْ لِي مِنْ لَدُنْكَ ذُرِّيَّةً طَيِّبَةً إِنَّكَ سَمِيعُ الدُّعَاءِ",
+    "rumi": "Rabbi hab li min ladunka dhurriyyatan tayyibatan innaka samiud-dua.",
+    "meaning": "பொருள்: Ya Tuhanku, kurniakanlah kepadaku dari sisi-Mu zuriat keturunan yang baik. Sesungguhnya Engkau Maha Mendengar doa."
+  },
+  {
+    "id": 46,
+    "title": "பிரார்த்தனை #46: Niat Solat Jumaat",
+    "category": [
+      "தொழுகை நிய்யத்",
+      "பர்ளு தொழுகை"
+    ],
+    "source": "Panduan Solat",
+    "arabic": "أُصَلِّي فَرْضَ الْجُمُعَةِ رَكْعَتَيْنِ مَأْمُومًا لِلَّهِ تَعَالَى",
+    "rumi": "Usalli fardhal-jum'ati rak'ataini ma'muman lillahi ta'ala.",
+    "meaning": "பொருள்: Sahaja aku solat fardhu Jumaat dua rakaat mengikut imam kerana Allah Taala.",
+    "showSource": true
+  },
+  {
+    "id": 47,
+    "title": "பிரார்த்தனை #47: Doa Masuk Tidur",
+    "category": "தினசரி",
+    "source": "",
+    "arabic": "بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا",
+    "rumi": "Bismikal-lahumma amutu wa ahya.",
+    "meaning": "பொருள்: Dengan nama-Mu ya Allah, aku mati (tidur) dan aku hidup (bangun).",
+    "showSource": false,
+    "definition": "Tip Tambahan: Antara amalan sunnah sebelum tidur yang dianjurkan ialah mengibaskan tempat tidur sebanyak tiga kali, membaca Ayat Kursi, surah-surah Al-Ikhlas, Al-Falaq, An-Nas, serta doa tidur yang diajarkan oleh Rasulullah SAW.",
+    "fadhilat": "Mendapat Lindungan Allah SWT: Dengan membaca doa, kita menyerahkan diri dan keselamatan jiwa serta raga kepada Allah SWT sepanjang malam."
+  },
+  {
+    "id": 48,
+    "title": "பிரார்த்தனை #48: Doa Selamat & Kesyukuran",
+    "category": "சபை",
+    "source": "",
+    "arabic": "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ\nاللَّهُمَّ إِنَّا نَسْتَحْفِظُكَ وَنَسْتَوْدِعُكَ أَدْيَانَنَا وَأَنْفُسَنَا وَأَهْلَنَا وَأَوْلَادَنَا وَأَمْوَالَنَا وَكُلَّ شَيْءٍ أَعْطَيْتَنَا\nاللَّهُمَّ اجْعَلْنَا وَإِيَّاهُمْ فِي كَنَفِكَ وَأَمَانِكَ وَعِيَاذِكَ مِنْ كُلِّ شَيْطَانٍ مَرِيدٍ وَجَبَّارٍ عَنِيدٍ وَذِي عَيْنٍ وَذِي بَغْيٍ وَذِي شَرٍّ كُلِّهِ إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ\nاللَّهُمَّ جَمِّلْنَا بِالْعَافِيَةِ وَالسَّلَامَةِ وَحَقِّقْنَا بِالتَّقْوَى وَالْاسْتِقَامَةِ، وَأَعِذْنَا مِنْ مُوجِبَاتِ النَّدَامَةِ إِنَّكَ سَمِيعُ الدُّعَاءِ.\n\nاللَّهُمَّ اغْفِرْ لَنَا وَلِوَالِدَيْنَا وَأَوْلَادِنَا وَمَنْ مَشَى مَعَنَا وَإِخْوَانِنَا فِي الدِّينِ وَأَصْحَابِنَا وَلِمَنْ أَحَبَّنَا فِيكَ وَلِمَنْ أَحْسَنَ إِلَيْنَا.\nوَلِجَمِيعِ الْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ وَالْمُسْلِمِينَ وَالْمُسْلِمَاتِ يَا رَبَّ الْعَالَمِينَ.\nوَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ، وَارْزُقْنَا كَمَالَ الْمُتَابَعَةِ لَهُ ظَاهِرًا وَبَاطِنًا فِي سَلَامَةٍ وَعَافِيَةٍ بِرَحْمَتِكَ، يَا أَرْحَمَ الرَّاحِمِينَ.\nوَصَلَّى اللَّهُ عَلَى عَبْدِكَ وَرَسُولِكَ مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ.",
+    "rumi": "Bismillahir-rahmanir-rahim\nAllahumma inna nastahfidzuka wa nestaudi'uka adyana-na wa anfusa-na wa ahla-na wa aula-da-na wa amwala-na wa kulla syai-in a'thaitana.\nAllahumma ij'alna wa iyyahum fi kanafi-ka wa amanika wa 'iyadzi-ka min kulli syaitanin marid, wa jabbarin 'anid, wa dzi 'ainin, wa dzi baghyin, wa dzi syarrin kulli-in, innaka 'ala kulli syai-in qadir.\n\nAllahumma jammilna bil-'afiyati was-salamah, wa haqqiqna bit-taqwa wal-istiqamah, wa a'idzna min mujibatin-nadamu, innaka sami'ud-du'a'.\n\nAllahummaghfir lana wa liwalidina wa aula-dina wa man masya ma'ana wa ikhwanina fid-din wa ashhabina wa liman ahabbanda fika wa liman ahsana ilaina.\n\nWa jami'il-mu'minina wal-mu'minati wal-muslimina wal-muslimati ya rabbal-'alamin.\n\nWa sallahullahu 'ala sayyidina Muhammadin wa 'ala alihi wa sahbihi wa sallam, warzuqna kamalal-mutaba'ata lahu zahiran wa batinan fi salamatin wa 'afiyatin birahmatika, ya arhamar-rahimin.\n\nWa sallahullahu 'ala 'abdika wa rasulika Muhammadin wa 'ala alihi wa sahbihi wa sallam.",
+    "meaning": "அளவற்ற அருளாளனும் நிகரற்ற அன்புடையவனுமாகிய அல்லாஹ்வின் திருப்பெயரால்.\n\nஇறைவா, நிச்சயமாக நாங்கள் உன்னிடம் பாதுகாப்பைக் கேட்கிறோம்; எங்களது மார்க்கம், எங்களது ஆன்மாக்கள், எங்களது குடும்பங்கள், எங்களது குழந்தைகள், எங்களது செல்வங்கள் மற்றும் எங்களுக்கு நீ வழங்கிய அனைத்தையும் உன்னிடமே ஒப்படைக்கிறோம்.\n\nஇறைவா, எங்களையும் அவர்களையும் ஒவ்வொரு கிளர்ச்சியாளரான ஷைத்தானிடமிருந்தும், அகந்தை கொண்ட பிடிவாதக்காரனிடமிருந்தும், பொறாமைப் பார்வை கொண்டவனிடமிருந்தும், அநீதி இழைப்பவனிடமிருந்தும், தீமை செய்பவர் அனைவரின் தீமையிலிருந்தும் எப்போதும் உனது பாதுகாப்பிலும், சாந்தியிலும், காவலிலும் வைத்திருப்பாயாக. நிச்சயமாக நீ எல்லாவற்றின் மீதும் பேராற்றல் உடையவன்.\n\nஇறைவா, எங்களை ஆரோக்கியத்தினாலும் பாதுகாப்பினாலும் அழகுபடுத்துவாயாக; இறையச்சத்தாலும் உறுதியாலும் எங்களது நிலையை நிலைநிறுத்துவாயாக; மேலும் வருத்தத்தைத் தரும் காரியங்களிலிருந்து எங்களைப் பாதுகாப்பாயாக. நிச்சயமாக நீ பிரார்த்தனைகளைக் கேட்பவன்.\n\nஇறைவா, எங்கள் பாவங்களையும், எங்கள் பெற்றோர்களின் பாவங்களையும், எங்கள் குழந்தைகளின் பாவங்களையும், எங்களுடன் நடப்பவர்களின் பாவங்களையும், எங்கள் மார்க்கச் சகோதரர்களின் பாவங்களையும், எங்கள் நண்பர்களின் பாவங்களையும், உமக்காக எங்களை நேசிப்பவர்களின் பாவங்களையும், எங்களுக்கு நற்செய்தி செய்தவர்கள் அனைவரின் பாவங்களையும் மன்னிப்பாயாக.\n\nஅகிலங்களின் இறைவா, நம்பிக்கை கொண்ட ஆண்கள், நம்பிக்கை கொண்ட பெண்கள், முஸ்லிமான ஆண்கள் மற்றும் முஸ்லிமான பெண்கள் அனைவரையும் மன்னிப்பாயாக.\n\nஎங்கள் தலைவர் நபிகள் நாயகம் முஹம்மது அவர்கள் மீதும், அவர்களின் குடும்பத்தார் மற்றும் தோழர்கள் மீதும் அல்லாஹ் தனது அருளையும் ஈடேற்றத்தையும் பொழிவானாக. எல்லாவற்றிலும் மிகக் கருணையாளனே, உனது அருளால் ஆரோக்கியத்துடனும் நல்வாழ்வுடனும் அவர்களின் அடிச்சுவடுகளை வெளிப்படையாகவும் உள்வாங்கவும் முழுமையாகப் பின்பற்றும் பேற்றினை எங்களுக்கு வழங்குவாயாக.\n\nஅல்லாஹ் தனது தூதரும் அடியாருமாகிய நபிகள் நாயகம் முஹம்மது அவர்கள் மீதும், அவர்களின் குடும்பத்தார் மற்றும் தோழர்கள் மீதும் தனது அருளையும் சாந்தியையும் பொழிவானாக.",
+    "showSource": true
+  }
+]

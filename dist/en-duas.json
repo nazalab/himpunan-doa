@@ -1,0 +1,553 @@
+[
+  {
+    "id": 1,
+    "title": "Prayer Upon Waking Up",
+    "category": "Daily",
+    "source": "Hadis Sahih (Narrated by al-Bukhari & Muslim)",
+    "arabic": "اَلْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ",
+    "rumi": "Alhamdulillahilladhi ahyana ba'da ma amatana wa ilaihin-nushur.",
+    "meaning": "All praise is due to Allah who brought us to life after our death, and to Him is the return.",
+    "fadhilat": "Expressing gratitude to Allah for granting another day of life and acknowledging resurrection."
+  },
+  {
+    "id": 2,
+    "title": "Prayer Before Eating",
+    "category": "Daily",
+    "source": "Hadis (Narrated by Abu Daud & Tirmizi)",
+    "arabic": "اللَّهُمَّ بَارِكْ لَنَا فِيمَا رَزَقْتَنَا وَقِنَا عَذَابَ النَّارِ",
+    "rumi": "Allahumma barik lana fi ma razaqtana wa qina 'adhaban-nar.",
+    "meaning": "O Allah, bless us in what You have provided us and protect us from the punishment of the Fire.",
+    "fadhilat": "Seeking blessings in our sustenance and protection from Hellfire."
+  },
+  {
+    "id": 3,
+    "title": "Prayer When Leaving Home",
+    "category": "Protection",
+    "source": "Hadis (Narrated by Abu Daud & Tirmizi)",
+    "arabic": "بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
+    "rumi": "Bismillahi tawakkaltu 'alallah,\nWa la hawla wa la quwwata illa billah.",
+    "meaning": "In the name of Allah, I place my trust in Allah; there is no might nor power except by Allah.",
+    "fadhilat": "Seeking divine protection, guidance, and sufficiency when stepping out of the house."
+  },
+  {
+    "id": 4,
+    "title": "Prayer When Entering Restroom",
+    "category": "Protection",
+    "source": "Hadis Sahih (Narrated by al-Bukhari & Muslim)",
+    "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ",
+    "rumi": "Allahumma inni a'udhu bika minal-khubuthi wal-khaba'ith.",
+    "meaning": "O Allah, I seek refuge in You from all male and female impure spirits (devils).",
+    "fadhilat": "Seeking protection from unclean places and invisible harm."
+  },
+  {
+    "id": 5,
+    "title": "Prayer After Eating",
+    "category": "Daily",
+    "source": "Hadis (Narrated by Abu Daud, Tirmizi & Ibnu Majah)",
+    "arabic": "اَلْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مُسْلِمِينَ",
+    "rumi": "Alhamdulillahilladhi at'amana wa saqana wa ja'alana muslimin.",
+    "meaning": "All praise is due to Allah who has fed us, provided us drink, and made us Muslims.",
+    "fadhilat": "Gratitude for sustenance and Islam."
+  },
+  {
+    "id": 6,
+    "title": "Prayer When Entering Home",
+    "category": "Protection",
+    "source": "Hadis (Narrated by Muslim from Jabir bin Abdullah)",
+    "arabic": "بِسْمِ اللَّهِ وَلَجْنَا، وَبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى رَبِّنَا تَوَكَّلْنَا",
+    "rumi": "Bismillahi walajna, wa bismillahi kharajna, wa 'ala rabbina tawakkalna.",
+    "meaning": "In the name of Allah we enter, in the name of Allah we leave, and upon our Lord we rely.",
+    "fadhilat": "Bringing blessings, peace, and angelic presence into the household."
+  },
+  {
+    "id": 7,
+    "title": "Prayer for Beneficial Knowledge",
+    "category": "Knowledge",
+    "source": "Quran (Surah Taha: 114)",
+    "arabic": "رَبِّ زِدْنِي عِلْمًا وَرْزُقْنِي فَهْمًا",
+    "rumi": "Rabbi zidni 'ilman warzuqni fahman.",
+    "meaning": "O my Lord, increase me in knowledge and grant me understanding.",
+    "fadhilat": "Increase in wisdom, knowledge, and spiritual clarity."
+  },
+  {
+    "id": 8,
+    "title": "Prayer for Good in This World & Hereafter",
+    "category": "Daily",
+    "source": "Quran (Surah al-Baqarah: 201)",
+    "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+    "rumi": "Rabbana atina fid-dunya hasanatan wa fil-akhirati hasanatan wa qina 'adhaban-nar.",
+    "meaning": "Our Lord, give us in this world that which is good and in the Hereafter that which is good, and protect us from the punishment of the Fire.",
+    "fadhilat": "Comprehensive dua covering worldly success and ultimate salvation."
+  },
+  {
+    "id": 9,
+    "title": "Prayer for Parents",
+    "category": "Knowledge",
+    "source": "Quran (Surah al-Isra': 24)",
+    "arabic": "رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا",
+    "rumi": "Rabbighfir li waliwalidayya warhamhuma kama rabbayani saghira.",
+    "meaning": "My Lord, have mercy upon them as they brought me up when I was small.",
+    "fadhilat": "Filial piety and invoking divine mercy upon parents."
+  },
+  {
+    "id": 10,
+    "title": "Prayer When Riding a Vehicle",
+    "category": "Protection",
+    "source": "Quran (Surah az-Zukhruf: 13-14)",
+    "arabic": "سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ",
+    "rumi": "Subhanalladhi sakhara lana hadha wa ma kunna lahu muqrinina wa inna ila rabbina lamunqalibun.",
+    "meaning": "Exalted is He who has subjected this to us, and we could not have otherwise subdued it. And indeed, to our Lord we will surely return.",
+    "fadhilat": "Safety during travel and acknowledging Allah's sovereignty."
+  },
+  {
+    "id": 11,
+    "title": "Opening Supplication (Iftitah)",
+    "category": "Sunnah Practices",
+    "source": "",
+    "arabic": "اللَّهُ أَكْبَرُ كَبِيرًا وَالْحَمْدُ لِلَّهِ كَثِيرًا وَسُبْحَانَ اللَّهِ بُكْرَةً وَأَصِيلًا. إِنِّي وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَاوَاتِ وَالْأَرْضَ حَنِيفًا مُسْلِمًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ. إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ. لَا شَرِيكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ",
+    "rumi": "Allahu akbaru kabiran wal-hamdu lillahi kathiran wa subhanallahi bukratan wa asila.\n\nInni wajjahtu wajhiya lilladhi fataras-samawati wal-arda hanifan musliman wa ma ana minal-mushrikin.\n\nInna salati wa nusuki wa mahyaya wa mamati lillahi rabbil-'alamin, la sharika lahu wa bidhalika umirtu wa ana minal-muslimin.",
+    "meaning": "Allah is most great with all greatness, and all praise is for Allah in abundance... Verily my prayer, my sacrifice, my living and my dying are for Allah, Lord of the worlds.",
+    "showSource": true,
+    "definition": "Reciting the Opening Supplication (Iftitah) in prayer holds various great merits and virtues, as it serves as a meaningful introduction and opening conversation between the servant and their Creator before starting the recitation of Al-Fatihah.",
+    "fadhilat": "Establishing presence, sincerity, and glorification at the start of prayer."
+  },
+  {
+    "id": 12,
+    "title": "Master of Istighfar (Sayyidul Istighfar)",
+    "category": "Istighfar",
+    "source": "Hadis Sahih (Narrated by al-Bukhari from Syaddad bin Aus)",
+    "arabic": "اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ منْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لَكَ بِذَنْبِي، فَاغْفِرْ لِي، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
+    "rumi": "Allahumma anta Rabbi la ilaha illa anta, khalaqtani wa ana 'abduka, wa ana 'ala 'ahdika wa wa'dika mastata'tu.\n\nA'udhu bika min sharri ma sana'tu, abu'u laka bini'matika 'alayya, wa abu'u laka bidhanbi.\n\nFaghfir li, fa innahu la yaghfirudh-dhunuba illa anta.",
+    "meaning": "O Allah, You are my Lord, there is no deity except You. You created me and I am Your servant... I acknowledge Your favor upon me and I acknowledge my sin, so forgive me.",
+    "fadhilat": "Whoever recites it during the day with firm belief and dies before evening is from the people of Paradise."
+  },
+  {
+    "id": 13,
+    "title": "Prayer for Righteous Offspring & Family",
+    "category": "Daily",
+    "source": "Quran (Surah al-Furqan: 74)",
+    "arabic": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
+    "rumi": "Rabbana hab lana min azwajina wa dhurriyyatina qurrota a'yunin waj'alna lil-muttaqina imama.",
+    "meaning": "Our Lord, grant us from among our wives and offspring comfort to our eyes and make us an example for the righteous.",
+    "fadhilat": "Harmony in family and righteous progeny."
+  },
+  {
+    "id": 14,
+    "title": "Prayer to Thank Allah's Blessings",
+    "category": "Daily",
+    "source": "Quran (Surah an-Naml: 19)",
+    "arabic": "رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ",
+    "rumi": "Rabbi awzi'ni an asykura ni'matakallati an'amta 'alayya wa 'ala walidayya wa an a'mala salihan tardahu.\n\nWa adkhilni bi rahmatika fi 'ibadikas-salihin.",
+    "meaning": "My Lord, enable me to be grateful for Your favor which You have bestowed upon me and upon my parents...",
+    "fadhilat": "Continuous blessings through gratitude and righteous actions."
+  },
+  {
+    "id": 15,
+    "title": "Post-Prayer Dhikr & Supplications",
+    "category": "Wird",
+    "source": "Traditional Practice & JAKIM Malaysia Guide",
+    "arabic": "أَسْتَغْفِرُ اللهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الحَيُّ الْقَيُّومُ وَأَتُوْبُ إِلَيْهِ (3×)\n\nلَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ (10×)\n\nاللَّهُمَّ أَجِرْنَا مِنَ النَّارِ (7×)\n\nاللَّهُمَّ أَنْتَ السَّلَامُ، وَمِنْكَ السَّلَامُ، وَإِلَيْكَ يَعُودُ السَّلَامُ، فَحَيِّنَا رَبَّنَا بِالسَّلَامِ، وَأَدْخِلْنَا الْجَنَّةَ دَارَ السَّلَامِ، تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ.\n\nسُبْحَانَ اللهِ (33×) | الْحَمْدُ لِلَّهِ (33×) | اللَّهُ أَكْبَرُ (33×)",
+    "rumi": "Astaghfirullahal-'azim alladzi la ilaha illa huwal-hayyul-qayyumu wa atubu ilaih (3x).\n\nLa ilaha illallahu wahdahu la sharika lah, lahul-mulku wa lahul-hamdu yuhyi wa yumitu wa huwa 'ala kulli shay-in qadir (10x).\n\nAllahumma ajirna minan-nar (7x).\n\nAllahumma antas-salam, wa minkas-salam, wa ilaika ya'udus-salam, fahayyina rabbana bis-salam, wa adkhilnal-jannata daras-salam, tabarakta rabbana wa ta'alaita ya dhal-jalali wal-ikram.\n\nSubhanallah (33x), Alhamdulillah (33x), Allahu Akbar (33x).",
+    "meaning": "O Allah, You are Peace and from You is peace... There is no deity except Allah alone, without partner...",
+    "fadhilat": "Purification, remembrance, and elevated spiritual station after obligatory prayers."
+  },
+  {
+    "id": 16,
+    "title": "Prayer Upon Completing Al-Quran (Khatam)",
+    "category": "Gathering",
+    "source": "Nusantara Traditional Practice & Prayer Book",
+    "arabic": "اللَّهُمَّ ارْحَمْنِي بِالْقُرْءَانِ وَاجْعَلْهُ لِي إِمَامًا وَنُورًا وَهُدًى وَرَحْمَةً. اللَّهُمَّ ذَكِّرْنِي مِنْهُ مَا نَسِيتُ وَعَلِّمْنِي مِنْهُ مَا جَهِلْتُ وَارْزُقْنِي تِلَاوَتَهُ آنَاءَ اللَّيْلِ وَأَطْرَافَ النَّهَارِ وَاجْعَلْهُ لِي حُجَّةً يَا رَبَّ الْعَالَمِينَ.",
+    "rumi": "Allahummarhamni bil-quran, waj'alhu li imaman wa nuran wa hudan wa rahmah.\n\nAllahumma dhakkirni minhu ma nasitu wa 'allimni minhu ma jahiltu warzuqni tilawatahu ana'al-laili wa atrafan-nahar, waj'alhu li hujjatan ya rabbal-'alamin.",
+    "meaning": "O Allah, have mercy on me through the Magnificent Quran and make it for me a leader, light, guidance, and mercy...",
+    "fadhilat": "Enormous barakah, divine mercy, and acceptance upon finishing Quran recitation."
+  },
+  {
+    "id": 17,
+    "title": "Step 1: Takbiratul Ihram & Intention",
+    "category": "Prayer Recitations",
+    "source": "Obligatory Prayer Pillars",
+    "arabic": "اللَّهُ أَكْبَرُ",
+    "rumi": "Allahu Akbar.",
+    "meaning": "Raising hands and saying 'Allahu Akbar' while making intention in the heart for the specific prayer.",
+    "definition": "The formal commencement of prayer."
+  },
+  {
+    "id": 18,
+    "title": "Step 2: Opening Supplication (Iftitah)",
+    "category": "Prayer Recitations",
+    "source": "Hadis Sahih (Narrated by Muslim from Ali bin Abi Talib)",
+    "arabic": "اللَّهُ أَكْبَرُ كَبِيرًا وَالْحَمْدُ لِلَّهِ كَثِيرًا وَسُبْحَانَ اللَّهِ بُكْرَةً وَأَصِيلًا. إِنِّي وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَاوَاتِ وَالْأَرْضَ حَنِيفًا مُسْلِمًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ. إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ. لَا شَرِيكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ",
+    "rumi": "Allahu akbaru kabiran wal-hamdu lillahi kathiran wa subhanallahi bukratan wa asila.\n\nInni wajjahtu wajhiya lilladhi fataras-samawati wal-arda hanifan musliman wa ma ana minal-mushrikin.\n\nInna salati wa nusuki wa mahyaya wa mamati lillahi rabbil-'alamin, la sharika lahu wa bidhalika umirtu wa ana minal-muslimin.",
+    "meaning": "Reciting the opening supplication after Takbiratul Ihram.",
+    "definition": "Sunnah supplication recited at the beginning of prayer."
+  },
+  {
+    "id": 19,
+    "title": "Step 3: Bowing (Ruku') Recitation",
+    "category": "Prayer Recitations",
+    "source": "Sunnah Ab'ad / Prayer Sunnah",
+    "arabic": "سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ",
+    "rumi": "Subhana rabbiyal-'azim wa bihamdih (dibaca 3 kali).",
+    "meaning": "Glory is to my Lord, the Magnificent, and with His praise.",
+    "definition": "Glorifying Allah in bowing position with back straight."
+  },
+  {
+    "id": 20,
+    "title": "Step 4: Rising from Ruku' (I'tidal)",
+    "category": "Prayer Recitations",
+    "source": "Prayer Pillars",
+    "arabic": "سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ، رَبَّنَا وَلَكَ الْحَمْدُ",
+    "rumi": "Sami'allahu liman hamidah, Rabbana wa lakal-hamd.",
+    "meaning": "Allah hears whoever praises Him. Our Lord, to You belongs all praise.",
+    "definition": "Standing erect after ruku' with poise."
+  },
+  {
+    "id": 21,
+    "title": "Step 5: Prostration (Sujud) Recitation",
+    "category": "Prayer Recitations",
+    "source": "Prayer Pillars",
+    "arabic": "سُبْحَانَ رَبِّيَ الأَعْلَى وَبِحَمْدِهِ",
+    "rumi": "Subhana rabbiyal-a'la wa bihamdih (dibaca 3 kali).",
+    "meaning": "Glory is to my Lord, the Most High, and with His praise.",
+    "definition": "The closest a servant is to Allah during prostration touching forehead and nose to the ground."
+  },
+  {
+    "id": 22,
+    "title": "Step 6: Sitting Between Two Prostrations",
+    "category": "Prayer Recitations",
+    "source": "Prayer Pillars",
+    "arabic": "رَبِّ اغْفِرْ لِي وَارْحَمْنِي وَاجْبُرْنِي وَارْفَعْنِي وَارْزُقْنِي وَهْدِنِي وَعَافِنِي وَاعْفُ عَنِّي",
+    "rumi": "Rabbighfir li, warhamni, wajburnni, warfa'ni, warzuqni, wahdini, wa 'afini, wa'fu 'anni.",
+    "meaning": "O Lord, forgive me, have mercy on me, guide me, enrich me, give me health, and pardon me.",
+    "definition": "Supplication for complete well-being and forgiveness between the two prostrations."
+  },
+  {
+    "id": 23,
+    "title": "Step 7: First Tahiyyat (Tashahhud Awal)",
+    "category": "Prayer Recitations",
+    "source": "Sunnah Ab'ad Prayer",
+    "arabic": "التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ. أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ.",
+    "rumi": "At-tahiyyatul mubarakatus-salawatut-tayyibatu lillah. Assalamu 'alaika ayyuhan-nabiyyu wa rahmatullahi wa barakatuh. Assalamu 'alaina wa 'ala 'ibadillahis-salihin. Asyhadu an la ilaha illallah, wa asyhadu anna Muhammadan rasulullah.",
+    "meaning": "Salutations, prayers, and good things belong to Allah. Peace be upon you, O Prophet, and the mercy of Allah and His blessings...",
+    "definition": "Attestation of faith in the middle of prayers containing 3 or 4 rakaats."
+  },
+  {
+    "id": 24,
+    "title": "Step 8: Final Tahiyyat (Tashahhud Akhir)",
+    "category": "Prayer Recitations",
+    "source": "Prayer Pillars",
+    "arabic": "التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ. أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ. اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى سَيِّدِنَا إِبْرَاهِيمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيمَ، وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى سَيِّدِنَا إِبْرَاهِيمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيمَ، فِي الْعَالَمِينَ إِنَّكَ حَمِيدٌ مَجِيدٌ.",
+    "rumi": "At-tahiyyatul mubarakatus-salawatut-tayyibatu lillah. Assalamu 'alaika ayyuhan-nabiyyu wa rahmatullahi wa barakatuh. Assalamu 'alaina wa 'ala 'ibadillahis-salihin. Asyhadu an la ilaha illallah, wa asyhadu anna Muhammadan rasulullah.\n\nAllahumma salli 'ala sayyidina Muhammad wa 'ala ali sayyidina Muhammad, kama sallaita 'ala sayyidina Ibrahim wa 'ala ali sayyidina Ibrahim. Wa barik 'ala sayyidina Muhammad wa 'ala ali sayyidina Muhammad, kama barakta 'ala sayyidina Ibrahim wa 'ala ali sayyidina Ibrahim, fil-'alamina innaka hamidun majid.",
+    "meaning": "Salutations, prayers, and good things belong to Allah... O Allah, send prayers upon Muhammad and upon the family of Muhammad...",
+    "definition": "Final testimony and blessings upon Prophet Muhammad and Prophet Ibrahim before salam."
+  },
+  {
+    "id": 25,
+    "title": "Step 9: Concluding Salam",
+    "category": "Prayer Recitations",
+    "source": "Prayer Pillars",
+    "arabic": "السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ",
+    "rumi": "Assalamu'alaikum warahmatullah (palingkan muka ke kanan dan ke kiri).",
+    "meaning": "Peace be upon you and the mercy of Allah.",
+    "definition": "Concluding the prayer officially by turning the head right and left."
+  },
+  {
+    "id": 26,
+    "title": "Prayer for Healing & Recovery",
+    "category": "Health",
+    "source": "Hadis Sahih (Narrated by al-Bukhari & Muslim)",
+    "arabic": "اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَاسَ، اشْفِ أَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا",
+    "rumi": "Allahumma rabban-nas, adhibil-basa, ishfi antas-safi, la shifa'a illa shifa'uk, shifa'an la yughadiru saqama.",
+    "meaning": "O Allah, Lord of mankind, remove the affliction and heal, for You are the Healer. There is no cure except Your cure...",
+    "fadhilat": "Prophetic healing, comfort, and relief from illness."
+  },
+  {
+    "id": 27,
+    "title": "Intention for Subuh Prayer",
+    "category": [
+      "Prayer Intentions",
+      "Obligatory Prayer"
+    ],
+    "source": "Fardhu Ain & Prayer Worship Guide",
+    "arabic": "أُصَلِّي فَرْضَ الصُّبْحِ رَكَعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لِلَّهِ تَعَالَى",
+    "rumi": "Usalli fardhas-subhi rak'ataini mustaqbilal-qiblati ada'an lillahi ta'ala.",
+    "meaning": "I intend to pray the obligatory Subuh prayer of two rakaats facing the qibla, following the imam, for Allah the Almighty.",
+    "definition": "Intention for Fajr/Subuh prayer."
+  },
+  {
+    "id": 28,
+    "title": "Intention for Zohor Prayer",
+    "category": [
+      "Prayer Intentions",
+      "Obligatory Prayer"
+    ],
+    "source": "Fardhu Ain & Prayer Worship Guide",
+    "arabic": "أُصَلِّي فَرْضَ الظُّهْرِ أَرْبَعَ رَكَعَاتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لِلَّهِ تَعَالَى",
+    "rumi": "Usalli fardhaz-zuhri arba'a raka'atin mustaqbilal-qiblati ada'an lillahi ta'ala.",
+    "meaning": "I intend to pray the obligatory Zohor prayer of four rakaats facing the qibla, following the imam, for Allah the Almighty.",
+    "definition": "Intention for Dhuhr prayer."
+  },
+  {
+    "id": 29,
+    "title": "Intention for Asar Prayer",
+    "category": [
+      "Prayer Intentions",
+      "Obligatory Prayer"
+    ],
+    "source": "Fardhu Ain & Prayer Worship Guide",
+    "arabic": "أُصَلِّي فَرْضَ الْعَصْرِ أَرْبَعَ رَكَعَاتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لِلَّهِ تَعَالَى",
+    "rumi": "Usalli fardhal-'asri arba'a raka'atin mustaqbilal-qiblati ada'an lillahi ta'ala.",
+    "meaning": "I intend to pray the obligatory Asar prayer of four rakaats facing the qibla, following the imam, for Allah the Almighty.",
+    "definition": "Intention for Asr prayer."
+  },
+  {
+    "id": 30,
+    "title": "Intention for Maghrib Prayer",
+    "category": [
+      "Prayer Intentions",
+      "Obligatory Prayer"
+    ],
+    "source": "Fardhu Ain & Prayer Worship Guide",
+    "arabic": "أُصَلِّي فَرْضَ الْمَغْرِبِ ثَلَاثَ رَكَعَاتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لِلَّهِ تَعَالَى",
+    "rumi": "Usalli fardhal-maghribi thalatha raka'atin mustaqbilal-qiblati ada'an lillahi ta'ala.",
+    "meaning": "I intend to pray the obligatory Maghrib prayer of three rakaats facing the qibla, following the imam, for Allah the Almighty.",
+    "definition": "Intention for Maghrib prayer."
+  },
+  {
+    "id": 31,
+    "title": "Intention for Isyak Prayer",
+    "category": [
+      "Prayer Intentions",
+      "Obligatory Prayer"
+    ],
+    "source": "Prayer Guide",
+    "arabic": "أُصَلِّي فَرْضَ الْعِشَاءِ أَرْبَعَ رَكَعَاتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لِلَّهِ تَعَالَى",
+    "rumi": "Usalli fardhal-'isha'i arba'a raka'atin mustaqbilal-qiblati ada'an lillahi ta'ala.",
+    "meaning": "I intend to pray the obligatory Isyak prayer of four rakaats facing the qibla, following the imam, for Allah the Almighty.",
+    "showSource": true,
+    "definition": "Intention for Isha prayer."
+  },
+  {
+    "id": 32,
+    "title": "Intention for Dhuha Sunnah Prayer",
+    "category": [
+      "Prayer Intentions",
+      "Sunnah Prayer"
+    ],
+    "source": "Sunnah Prayer Guide",
+    "arabic": "أُصَلِّي سُنَّةَ الضُّحَى رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatad-duha rak'ataini lillahi ta'ala.",
+    "meaning": "I intend to pray the Sunnah Dhuha prayer of two rakaats facing the qibla, for Allah the Almighty.",
+    "definition": "Sunnah prayer performed in the morning after sunrise."
+  },
+  {
+    "id": 33,
+    "title": "Intention for Tahajjud Sunnah Prayer",
+    "category": [
+      "Prayer Intentions",
+      "Sunnah Prayer"
+    ],
+    "source": "Sunnah Prayer Guide",
+    "arabic": "أُصَلِّي سُنَّةَ التَّهَجُّدِ رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatat-tahajjud rak'ataini lillahi ta'ala.",
+    "meaning": "I intend to pray the Sunnah Tahajjud prayer of two rakaats facing the qibla, for Allah the Almighty.",
+    "definition": "Night vigil prayer performed after sleeping."
+  },
+  {
+    "id": 34,
+    "title": "Intention for Hajat Sunnah Prayer",
+    "category": [
+      "Prayer Intentions",
+      "Sunnah Prayer"
+    ],
+    "source": "Sunnah Prayer Guide",
+    "arabic": "أُصَلِّي سُنَّةَ الْحَاجَةِ رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatal-hajati rak'ataini lillahi ta'ala.",
+    "meaning": "I intend to pray the Sunnah Hajat prayer of two rakaats facing the qibla, for Allah the Almighty.",
+    "definition": "Prayer to seek Allah's help and fulfillment of needs."
+  },
+  {
+    "id": 35,
+    "title": "Intention for Witir Sunnah Prayer",
+    "category": [
+      "Prayer Intentions",
+      "Sunnah Prayer"
+    ],
+    "source": "Sunnah Prayer Guide",
+    "arabic": "أُصَلِّي سُنَّةَ الْوِتْرِ رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatal-witri rak'ataini lillahi ta'ala.",
+    "meaning": "I intend to pray the Sunnah Witir prayer of two rakaats facing the qibla, for Allah the Almighty.",
+    "definition": "Odd-numbered concluding night prayer."
+  },
+  {
+    "id": 36,
+    "title": "Intention for Rawatib Qobliyah Subuh",
+    "category": [
+      "Prayer Intentions",
+      "Sunnah Prayer",
+      "Rawatib Sunnah"
+    ],
+    "source": "Rawatib Sunnah Prayer Guide",
+    "arabic": "أُصَلِّي سُنَّةَ الصُّبْحِ قَبْلِيَّةً رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatas-subhi qabliyyatan rak'ataini lillahi ta'ala.",
+    "meaning": "I intend to pray the Sunnah Qobliyah Subuh prayer of two rakaats before Subuh...",
+    "definition": "Sunnah Rawatib prayer performed before Subuh prayer."
+  },
+  {
+    "id": 37,
+    "title": "Intention for Rawatib Qobliyah Zohor",
+    "category": [
+      "Prayer Intentions",
+      "Sunnah Prayer",
+      "Rawatib Sunnah"
+    ],
+    "source": "Rawatib Sunnah Prayer Guide",
+    "arabic": "أُصَلِّي سُنَّةَ الظُّهْرِ قَبْلِيَّةً رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatal-zuhri qabliyyatan rak'ataini lillahi ta'ala.",
+    "meaning": "I intend to pray the Sunnah Qobliyah Zohor prayer of two rakaats before Zohor...",
+    "definition": "Sunnah Rawatib prayer performed before Zohor prayer."
+  },
+  {
+    "id": 38,
+    "title": "Intention for Rawatib Ba'diyah Zohor",
+    "category": [
+      "Prayer Intentions",
+      "Sunnah Prayer",
+      "Rawatib Sunnah"
+    ],
+    "source": "Rawatib Sunnah Prayer Guide",
+    "arabic": "أُصَلِّي سُنَّةَ الظُّهْرِ بَعْدِيَّةً رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatal-zuhri ba'diyatan rak'ataini lillahi ta'ala.",
+    "meaning": "I intend to pray the Sunnah Ba'diyah Zohor prayer of two rakaats after Zohor...",
+    "definition": "Sunnah Rawatib prayer performed after Zohor prayer."
+  },
+  {
+    "id": 39,
+    "title": "Intention for Rawatib Ba'diyah Maghrib",
+    "category": [
+      "Prayer Intentions",
+      "Sunnah Prayer",
+      "Rawatib Sunnah"
+    ],
+    "source": "Rawatib Sunnah Prayer Guide",
+    "arabic": "أُصَلِّي سُنَّةَ الْمَغْرِبِ بَعْدِيَّةً رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatal-maghribi ba'diyatan rak'ataini lillahi ta'ala.",
+    "meaning": "I intend to pray the Sunnah Ba'diyah Maghrib prayer of two rakaats after Maghrib...",
+    "definition": "Sunnah Rawatib prayer performed after Maghrib prayer."
+  },
+  {
+    "id": 40,
+    "title": "Intention for Rawatib Ba'diyah Isyak",
+    "category": [
+      "Prayer Intentions",
+      "Sunnah Prayer",
+      "Rawatib Sunnah"
+    ],
+    "source": "Rawatib Sunnah Prayer Guide",
+    "arabic": "أُصَلِّي سُنَّةَ الْعِشَاءِ بَعْدِيَّةً رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatal-'isha'i ba'diyatan rak'ataini lillahi ta'ala.",
+    "meaning": "I intend to pray the Sunnah Ba'diyah Isyak prayer of two rakaats after Isyak...",
+    "definition": "Sunnah Rawatib prayer performed after Isyak prayer."
+  },
+  {
+    "id": 41,
+    "title": "Intention for Rawatib Qobliyah Asar",
+    "category": [
+      "Prayer Intentions",
+      "Sunnah Prayer",
+      "Rawatib Sunnah"
+    ],
+    "source": "Rawatib Sunnah Prayer Guide",
+    "arabic": "أُصَلِّي سُنَّةَ الْعَصْرِ قَبْلِيَّةً رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatal-'asri qabliyyatan rak'ataini lillahi ta'ala.",
+    "meaning": "I intend to pray the Sunnah Qobliyah Asar prayer of two rakaats before Asar...",
+    "definition": "Sunnah Rawatib prayer performed before Asar prayer."
+  },
+  {
+    "id": 42,
+    "title": "Intention for Rawatib Qobliyah Maghrib",
+    "category": [
+      "Prayer Intentions",
+      "Sunnah Prayer",
+      "Rawatib Sunnah"
+    ],
+    "source": "Rawatib Sunnah Prayer Guide",
+    "arabic": "أُصَلِّي سُنَّةَ الْمَغْرِبِ قَبْلِيَّةً رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatal-maghribi qabliyyatan rak'ataini lillahi ta'ala.",
+    "meaning": "I intend to pray the Sunnah Qobliyah Maghrib prayer of two rakaats before Maghrib...",
+    "definition": "Sunnah Rawatib prayer performed before Maghrib prayer."
+  },
+  {
+    "id": 43,
+    "title": "Intention for Rawatib Qobliyah Isyak",
+    "category": [
+      "Prayer Intentions",
+      "Sunnah Prayer",
+      "Rawatib Sunnah"
+    ],
+    "source": "Rawatib Sunnah Prayer Guide",
+    "arabic": "أُصَلِّي سُنَّةَ الْعِشَاءِ قَبْلِيَّةً رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usalli sunnatal-'isha'i qabliyyatan rak'ataini lillahi ta'ala.",
+    "meaning": "I intend to pray the Sunnah Qobliyah Isyak prayer of two rakaats before Isyak...",
+    "definition": "Sunnah Rawatib prayer performed before Isyak prayer."
+  },
+  {
+    "id": 44,
+    "title": "Istikharah Prayer Supplication",
+    "category": "Sunnah Prayer",
+    "source": "Prayer Guide",
+    "arabic": "أُصَلِّي سُنَّةَ الاِسْتِخَارَةِ رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+    "rumi": "Usolli sunnatal istikharati rak'ataini lillahi Ta'ala.",
+    "meaning": "O Allah, I seek Your guidance through Your knowledge, and Ability through Your power...",
+    "showSource": true,
+    "definition": "Istikharah prayer is a two-rakat Sunnah prayer performed to seek guidance and the best choice from Allah SWT (such as career, studies, or life partner selection).",
+    "fadhilat": "Seeking divine guidance and ease in making important life decisions."
+  },
+  {
+    "id": 45,
+    "title": "Prayer for Offspring (Prophet Zakaria a.s.)",
+    "category": "Health",
+    "source": "Quran (Surah Ali 'Imran: 38)",
+    "arabic": "رَبِّ هَبْ لِي مِنْ لَدُنْكَ ذُرِّيَّةً طَيِّبَةً إِنَّكَ سَمِيعُ الدُّعَاءِ",
+    "rumi": "Rabbi hab li min ladunka dhurriyyatan tayyibatan innaka samiud-dua.",
+    "meaning": "My Lord, grant me from Yourself a good offspring. Indeed, You are the Hearer of supplication.",
+    "fadhilat": "Seeking righteous children and divine grace."
+  },
+  {
+    "id": 46,
+    "title": "Intention for Friday (Jumaat) Prayer",
+    "category": [
+      "Prayer Intentions",
+      "Obligatory Prayer"
+    ],
+    "source": "Prayer Guide",
+    "arabic": "أُصَلِّي فَرْضَ الْجُمُعَةِ رَكْعَتَيْنِ مَأْمُومًا لِلَّهِ تَعَالَى",
+    "rumi": "Usalli fardhal-jum'ati rak'ataini ma'muman lillahi ta'ala.",
+    "meaning": "I intend to pray the obligatory Jumaat prayer of two rakaats following the imam, for Allah the Almighty.",
+    "showSource": true,
+    "definition": "Congregational Friday prayer replacing Zohor."
+  },
+  {
+    "id": 47,
+    "title": "Prayer Before Sleeping",
+    "category": "Daily",
+    "source": "",
+    "arabic": "بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا",
+    "rumi": "Bismikal-lahumma amutu wa ahya.",
+    "meaning": "In Your name, O Allah, I die and I live.",
+    "showSource": false,
+    "definition": "Additional Tip: Among the recommended Sunnah practices before sleeping are dusting off the bed three times, reciting Ayat al-Kursi, Surah al-Ikhlas, al-Falaq, an-Nas, and the sleep prayer taught by the Messenger of Allah SAW.",
+    "fadhilat": "Placing oneself in Allah's protection before sleep."
+  },
+  {
+    "id": 48,
+    "title": "Prayer for Peace & Gratitude",
+    "category": "Gathering",
+    "source": "",
+    "arabic": "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ\nاللَّهُمَّ إِنَّا نَسْتَحْفِظُكَ وَنَسْتَوْدِعُكَ أَدْيَانَنَا وَأَنْفُسَنَا وَأَهْلَنَا وَأَوْلَادَنَا وَأَمْوَالَنَا وَكُلَّ شَيْءٍ أَعْطَيْتَنَا\nاللَّهُمَّ اجْعَلْنَا وَإِيَّاهُمْ فِي كَنَفِكَ وَأَمَانِكَ وَعِيَاذِكَ مِنْ كُلِّ شَيْطَانٍ مَرِيدٍ وَجَبَّارٍ عَنِيدٍ وَذِي عَيْنٍ وَذِي بَغْيٍ وَذِي شَرٍّ كُلِّهِ إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ\nاللَّهُمَّ جَمِّلْنَا بِالْعَافِيَةِ وَالسَّلَامَةِ وَحَقِّقْنَا بِالتَّقْوَى وَالْاسْتِقَامَةِ، وَأَعِذْنَا مِنْ مُوجِبَاتِ النَّدَامَةِ إِنَّكَ سَمِيعُ الدُّعَاءِ.\n\nاللَّهُمَّ اغْفِرْ لَنَا وَلِوَالِدَيْنَا وَأَوْلَادِنَا وَمَنْ مَشَى مَعَنَا وَإِخْوَانِنَا فِي الدِّينِ وَأَصْحَابِنَا وَلِمَنْ أَحَبَّنَا فِيكَ وَلِمَنْ أَحْسَنَ إِلَيْنَا.\nوَلِجَمِيعِ الْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ وَالْمُسْلِمِينَ وَالْمُسْلِمَاتِ يَا رَبَّ الْعَالَمِينَ.\nوَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ، وَارْزُقْنَا كَمَالَ الْمُتَابَعَةِ لَهُ ظَاهِرًا وَبَاطِنًا فِي سَلَامَةٍ وَعَافِيَةٍ بِرَحْمَتِكَ، يَا أَرْحَمَ الرَّاحِمِينَ.\nوَصَلَّى اللَّهُ عَلَى عَبْدِكَ وَرَسُولِكَ مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ.",
+    "rumi": "Bismillahir-rahmanir-rahim\nAllahumma inna nastahfidzuka wa nestaudi'uka adyana-na wa anfusa-na wa ahla-na wa aula-da-na wa amwala-na wa kulla syai-in a'thaitana.\nAllahumma ij'alna wa iyyahum fi kanafi-ka wa amanika wa 'iyadzi-ka min kulli syaitanin marid, wa jabbarin 'anid, wa dzi 'ainin, wa dzi baghyin, wa dzi syarrin kulli-in, innaka 'ala kulli syai-in qadir.\n\nAllahumma jammilna bil-'afiyati was-salamah, wa haqqiqna bit-taqwa wal-istiqamah, wa a'idzna min mujibatin-nadamu, innaka sami'ud-du'a'.\n\nAllahummaghfir lana wa liwalidina wa aula-dina wa man masya ma'ana wa ikhwanina fid-din wa ashhabina wa liman ahabbanda fika wa liman ahsana ilaina.\n\nWa jami'il-mu'minina wal-mu'minati wal-muslimina wal-muslimati ya rabbal-'alamin.\n\nWa sallahullahu 'ala sayyidina Muhammadin wa 'ala alihi wa sahbihi wa sallam, warzuqna kamalal-mutaba'ata lahu zahiran wa batinan fi salamatin wa 'afiyatin birahmatika, ya arhamar-rahimin.\n\nWa sallahullahu 'ala 'abdika wa rasulika Muhammadin wa 'ala alihi wa sahbihi wa sallam.",
+    "meaning": "O Allah, grant us safety, faith, peace, and well-being...",
+    "showSource": true,
+    "fadhilat": "Divine peace, security, and stability."
+  }
+]

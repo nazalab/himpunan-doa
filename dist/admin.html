@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ms" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Himpunan Doa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            neonPink: '#ff007f',
+            neonCyan: '#00f0ff',
+            darkBg: '#08090d',
+            cardBg: 'rgba(20, 21, 33, 0.65)',
+          },
+          boxShadow: {
+            neon: '0 0 15px rgba(255, 0, 127, 0.4), inset 0 0 15px rgba(255, 0, 127, 0.1)',
+            neonCyan: '0 0 15px rgba(0, 240, 255, 0.4), inset 0 0 15px rgba(0, 240, 255, 0.1)',
+            glow: '0 0 25px rgba(255, 0, 127, 0.6)',
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at 50% 10%, #1a0b2e 0%, #08090d 70%);
+      color: #f3f4f6;
+      min-height: 100vh;
+    }
+    .glass {
+      background: rgba(20, 21, 33, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 0, 127, 0.3);
+    }
+    .glass-card {
+      background: rgba(18, 20, 32, 0.6);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 0, 127, 0.2);
+      transition: all 0.3s ease;
+    }
+    .glass-card:hover {
+      border-color: rgba(255, 0, 127, 0.5);
+      box-shadow: 0 0 20px rgba(255, 0, 127, 0.25);
+    }
+    ::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #08090d;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #ff007f;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body class="selection:bg-neonPink selection:text-white pb-16">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 glass border-b border-pink-500/20 px-4 py-3 sm:px-8">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-neonPink to-neonCyan flex items-center justify-center shadow-neon">
+          <i class="fa-solid fa-gauge-high text-white text-lg"></i>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold tracking-wider bg-gradient-to-r from-neonPink via-pink-400 to-neonCyan bg-clip-text text-transparent">⚡ DASHBOARD ADMIN</h1>
+          <p class="text-xs text-gray-400">Pengurusan Data Himpunan Doa & Auto-Sync JSON</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <select id="adminLangSelect" onchange="changeAdminLang(this.value)" class="bg-black/40 border border-pink-500/30 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-neonPink h-10">
+          <option value="ms">BM (Melayu)</option>
+          <option value="en">EN (English)</option>
+          <option value="cn">CN (Mandarin)</option>
+          <option value="ta">TA (Tamil)</option>
+        </select>
+        <a href="index.html" class="px-4 py-2 rounded-xl text-xs font-semibold glass-card text-neonCyan border-cyan-500/30 hover:bg-cyan-500/20 transition-all flex items-center gap-2">
+          <i class="fa-solid fa-arrow-left"></i> Kembali ke App
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-6xl mx-auto px-4 mt-8">
+
+    <!-- Stats & Actions Bar -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+      <div class="glass-card rounded-2xl p-5 flex items-center justify-between">
+        <div>
+          <p class="text-xs text-gray-400 font-medium">Jumlah Doa</p>
+          <h3 id="totalCount" class="text-2xl font-bold text-white mt-1">0</h3>
+        </div>
+        <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-neonPink text-xl shadow-neon">
+          <i class="fa-solid fa-book"></i>
+        </div>
+      </div>
+      <div class="glass-card rounded-2xl p-5 flex items-center justify-between">
+        <div>
+          <p class="text-xs text-gray-400 font-medium">Status Sync</p>
+          <h3 id="syncStatus" class="text-sm font-bold text-green-400 mt-2">Terhubung ke Server</h3>
+        </div>
+        <div class="w-12 h-12 rounded-xl bg-green-500/10 border border-green-500/30 flex items-center justify-center text-green-400 text-xl shadow-neonCyan">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </div>
+      <div class="glass-card rounded-2xl p-5 flex items-center justify-center gap-3">
+        <button onclick="openModal()" class="w-full py-3 rounded-xl bg-neonPink/20 border border-neonPink text-neonPink hover:bg-neonPink hover:text-white transition-all text-xs font-bold flex items-center justify-center gap-2 shadow-neon">
+          <i class="fa-solid fa-plus-circle"></i> Tambah Doa Baru
+        </button>
+      </div>
+    </div>
+
+    <!-- Search & Filter -->
+    <div class="glass-card rounded-2xl p-4 mb-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="relative w-full sm:w-80">
+        <input type="text" id="adminSearch" placeholder="🔍 Cari senarai doa (cth: Harian, Solat)..." class="w-full bg-black/40 border border-pink-500/30 rounded-xl px-4 py-2 text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:border-neonPink transition-all">
+      </div>
+      <div class="text-xs text-gray-400">
+        💡 Setiap penambahan/suntingan akan terus dikemas kini secara automatik ke <code id="currentDatasetFile" class="text-neonCyan font-bold">duas.json</code>.
+      </div>
+    </div>
+
+    <!-- Duas Table -->
+    <div class="glass rounded-2xl overflow-hidden border border-pink-500/30 shadow-glow">
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="border-b border-pink-500/20 bg-black/40 text-[10px] uppercase tracking-widest text-pink-400">
+              <th class="p-4">ID</th>
+              <th class="p-4">Tajuk</th>
+              <th class="p-4">Kategori</th>
+              <th class="p-4">Sumber</th>
+              <th class="p-4 text-right">Tindakan</th>
+            </tr>
+          </thead>
+          <tbody id="adminTableBody" class="divide-y divide-pink-500/10 text-xs text-gray-300">
+            <!-- Injected via JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- Add/Edit Modal -->
+  <div id="duaModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md hidden opacity-0 transition-opacity duration-300">
+    <div class="glass max-w-2xl w-full max-h-[90vh] overflow-y-auto rounded-3xl p-6 sm:p-8 relative border border-pink-500/50 shadow-glow transform scale-95 transition-transform duration-300" id="modalContentBox">
+      <button type="button" onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-neonPink bg-white/5 hover:bg-white/10 p-2.5 rounded-xl transition-all">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <h2 id="modalTitle" class="text-xl font-bold text-white mb-4">Tambah Doa Baharu</h2>
+
+      <form id="duaForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+        <input type="hidden" id="editId">
+        <div>
+          <label class="block text-[10px] uppercase tracking-wider text-white font-semibold mb-1">Tajuk Doa</label>
+          <input type="text" id="formTitle" required class="w-full bg-black/40 border border-pink-500/30 rounded-xl px-4 py-2 text-xs text-white focus:outline-none focus:border-neonPink">
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="relative">
+            <label class="block text-[10px] uppercase tracking-wider text-white font-semibold mb-1">Kategori / Tag (Klik atau taip)</label>
+            <input type="text" id="formCategory" required placeholder="Harian, Niat Solat..." autocomplete="off" oninput="filterCategorySuggestions(this.value)" onfocus="showCategorySuggestions()" class="w-full bg-black/40 border border-pink-500/30 rounded-xl px-4 py-2 text-xs text-white focus:outline-none focus:border-neonPink">
+            <!-- Custom Suggestion Dropdown -->
+            <div id="categorySuggestions" class="absolute left-0 right-0 mt-1 glass rounded-xl p-2 z-50 hidden max-h-40 overflow-y-auto border border-pink-500/40 shadow-glow space-y-1"></div>
+          </div>
+        <!-- Toggle Sumber Section (On/Off) -->
+        <div class="glass-card rounded-xl p-4 border border-pink-500/20">
+          <div class="flex items-center justify-between mb-2">
+            <label class="flex items-center gap-2.5 cursor-pointer">
+              <input type="checkbox" id="toggleSource" checked onchange="toggleSourceBox()" class="w-4 h-4 accent-neonPink rounded cursor-pointer">
+              <span class="text-[10px] text-neonCyan font-semibold uppercase tracking-wider"><i class="fa-solid fa-book-bookmark mr-1"></i> Sumber (On/Off)</span>
+            </label>
+          </div>
+          <div id="sourceBox" class="mt-2 relative">
+            <input type="text" id="formSource" placeholder="Hadis Sahih / Al-Quran" autocomplete="off" oninput="filterSourceSuggestions(this.value)" onfocus="showSourceSuggestions()" class="w-full bg-black/40 border border-pink-500/30 rounded-xl px-4 py-2 text-xs text-white focus:outline-none focus:border-neonPink">
+            <!-- Custom Source Suggestion Dropdown -->
+            <div id="sourceSuggestions" class="absolute left-0 right-0 mt-1 glass rounded-xl p-2 z-50 hidden max-h-40 overflow-y-auto border border-pink-500/40 shadow-glow space-y-1"></div>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-[10px] uppercase tracking-wider text-white font-semibold mb-1">Teks Arab</label>
+          <textarea id="formArabic" rows="3" required class="w-full bg-black/40 border border-pink-500/30 rounded-xl p-3 text-sm text-right font-arabic text-white focus:outline-none focus:border-neonPink"></textarea>
+        </div>
+        <div>
+          <label class="block text-[10px] uppercase tracking-wider text-white font-semibold mb-1">Bacaan Rumi</label>
+          <textarea id="formRumi" rows="2" required class="w-full bg-black/40 border border-pink-500/30 rounded-xl p-3 text-xs text-yellow-400 italic focus:outline-none focus:border-neonPink"></textarea>
+        </div>
+        <div>
+          <label class="block text-[10px] uppercase tracking-wider text-white font-semibold mb-1">Maksud / Terjemahan</label>
+          <textarea id="formMeaning" rows="3" required class="w-full bg-black/40 border border-pink-500/30 rounded-xl p-3 text-xs text-gray-200 focus:outline-none focus:border-neonPink"></textarea>
+        </div>
+
+        <!-- Toggle Definition Section (On/Off) -->
+        <div class="glass-card rounded-xl p-4 border border-pink-500/20">
+          <div class="flex items-center justify-between mb-2">
+            <label class="flex items-center gap-2.5 cursor-pointer">
+              <input type="checkbox" id="toggleDef" onchange="toggleDefBox()" class="w-4 h-4 accent-neonPink rounded cursor-pointer">
+              <span class="text-xs font-semibold text-white uppercase tracking-wider"><i class="fa-solid fa-circle-info mr-1"></i> Tambah Definisi / Nota Khas (On/Off)</span>
+            </label>
+          </div>
+          <div id="defBox" class="hidden mt-2">
+            <textarea id="formDefinition" rows="2" placeholder="Cth: Definisi Solat Rawatib: Solat sunat yang dikerjakan mengiringi solat fardhu..." class="w-full bg-black/40 border border-pink-500/30 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-neonPink"></textarea>
+          </div>
+        </div>
+
+        <!-- Toggle Fadhilat Section (On/Off) -->
+        <div class="glass-card rounded-xl p-4 border border-pink-500/20">
+          <div class="flex items-center justify-between mb-2">
+            <label class="flex items-center gap-2.5 cursor-pointer">
+              <input type="checkbox" id="toggleFadhilat" onchange="toggleFadhilatBox()" class="w-4 h-4 accent-neonPink rounded cursor-pointer">
+              <span class="text-[10px] text-yellow-400 font-semibold uppercase tracking-wider"><i class="fa-solid fa-star mr-1"></i> Fadhilat (On/Off)</span>
+            </label>
+          </div>
+          <div id="fadhilatBox" class="hidden mt-2">
+            <textarea id="formFadhilat" rows="3" placeholder="Masukkan fadhilat doa ini..." class="w-full bg-black/40 border border-pink-500/30 rounded-xl p-3 text-[10px] text-yellow-400 focus:outline-none focus:border-neonPink"></textarea>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-end gap-3 pt-4 border-t border-pink-500/20">
+          <button type="button" onclick="closeModal()" class="px-4 py-2 rounded-xl text-xs font-semibold glass-card text-gray-300 hover:text-white transition-all">Batal</button>
+          <button type="submit" class="px-6 py-2 rounded-xl text-xs font-semibold bg-gradient-to-r from-neonPink to-purple-600 text-white shadow-neon hover:opacity-90 transition-all">Simpan Doa</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    let duasData = [];
+    let currentSearch = '';
+    let existingTags = [];
+    let existingSources = [];
+    let adminLang = 'ms';
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      const langSel = document.getElementById('adminLangSelect');
+      if (langSel) langSel.value = adminLang;
+
+      await loadDuas();
+
+      document.getElementById('adminSearch').addEventListener('input', (e) => {
+        currentSearch = e.target.value.toLowerCase();
+        renderTable();
+      });
+    });
+
+    async function changeAdminLang(lang) {
+      adminLang = lang;
+      await loadDuas();
+    }
+
+    async function loadDuas() {
+      try {
+        let fileName = 'duas.json';
+        if (adminLang === 'en') fileName = 'en-duas.json';
+        else if (adminLang === 'cn') fileName = 'cn-duas.json';
+        else if (adminLang === 'ta') fileName = 'ta-duas.json';
+
+        const res = await fetch(fileName + '?v=' + Date.now());
+        duasData = await res.json();
+        document.getElementById('totalCount').innerText = duasData.length;
+        const fileEl = document.getElementById('currentDatasetFile');
+        if (fileEl) fileEl.innerText = fileName;
+        renderTable();
+        updateCategorySuggestions();
+        updateSourceSuggestions();
+      } catch (err) {
+        console.error('Gagal memuatkan data:', err);
+        document.getElementById('syncStatus').innerText = 'Gagal memuatkan data';
+        document.getElementById('syncStatus').className = 'text-sm font-bold text-red-400 mt-2';
+      }
+    }
+
+    function updateCategorySuggestions() {
+      const allTags = new Set();
+      duasData.forEach(d => {
+        if (Array.isArray(d.category)) {
+          d.category.forEach(c => allTags.add(c));
+        } else if (d.category) {
+          allTags.add(d.category);
+        }
+      });
+      existingTags = Array.from(allTags);
+    }
+
+    function updateSourceSuggestions() {
+      const allSources = new Set();
+      duasData.forEach(d => {
+        if (d.source) {
+          allSources.add(d.source);
+        }
+      });
+      existingSources = Array.from(allSources);
+    }
+
+    function showCategorySuggestions() {
+      const box = document.getElementById('categorySuggestions');
+      if (existingTags.length > 0) {
+        box.classList.remove('hidden');
+        renderCategorySuggestions(existingTags);
+      }
+    }
+
+    function showSourceSuggestions() {
+      const box = document.getElementById('sourceSuggestions');
+      if (existingSources.length > 0) {
+        box.classList.remove('hidden');
+        renderSourceSuggestions(existingSources);
+      }
+    }
+
+    function filterCategorySuggestions(query) {
+      const box = document.getElementById('categorySuggestions');
+      box.classList.remove('hidden');
+      const q = query.toLowerCase();
+      const filtered = existingTags.filter(t => t.toLowerCase().includes(q));
+      renderCategorySuggestions(filtered);
+    }
+
+    function filterSourceSuggestions(query) {
+      const box = document.getElementById('sourceSuggestions');
+      box.classList.remove('hidden');
+      const q = query.toLowerCase();
+      const filtered = existingSources.filter(s => s.toLowerCase().includes(q));
+      renderSourceSuggestions(filtered);
+    }
+
+    function renderCategorySuggestions(tags) {
+      const box = document.getElementById('categorySuggestions');
+      box.innerHTML = '';
+      if (tags.length === 0) {
+        box.innerHTML = '<div class="text-[10px] text-gray-400 px-2 py-1">Tiada cadangan tag</div>';
+        return;
+      }
+      tags.forEach(tag => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'w-full text-left px-3 py-1.5 rounded-lg text-xs text-gray-200 hover:bg-pink-500/20 hover:text-white transition-all flex items-center justify-between';
+        btn.innerHTML = `<span><i class="fa-solid fa-tag mr-1 text-neonPink"></i> ${tag}</span>`;
+        btn.onclick = () => {
+          document.getElementById('formCategory').value = tag;
+          box.classList.add('hidden');
+        };
+        box.appendChild(btn);
+      });
+    }
+
+    function renderSourceSuggestions(sources) {
+      const box = document.getElementById('sourceSuggestions');
+      box.innerHTML = '';
+      if (sources.length === 0) {
+        box.innerHTML = '<div class="text-[10px] text-gray-400 px-2 py-1">Tiada cadangan sumber (taip sendiri)</div>';
+        return;
+      }
+      sources.forEach(src => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'w-full text-left px-3 py-1.5 rounded-lg text-xs text-gray-200 hover:bg-cyan-500/20 hover:text-white transition-all flex items-center justify-between';
+        btn.innerHTML = `<span><i class="fa-solid fa-book-bookmark mr-1 text-neonCyan"></i> ${src}</span>`;
+        btn.onclick = () => {
+          document.getElementById('formSource').value = src;
+          box.classList.add('hidden');
+        };
+        box.appendChild(btn);
+      });
+    }
+
+    // Close suggestions on outside click
+    window.addEventListener('click', (e) => {
+      if (!e.target.closest('#formCategory') && !e.target.closest('#categorySuggestions')) {
+        const box = document.getElementById('categorySuggestions');
+        if (box) box.classList.add('hidden');
+      }
+      if (!e.target.closest('#formSource') && !e.target.closest('#sourceSuggestions')) {
+        const box = document.getElementById('sourceSuggestions');
+        if (box) box.classList.add('hidden');
+      }
+    });
+
+    function toggleDefBox() {
+      const isChecked = document.getElementById('toggleDef').checked;
+      const box = document.getElementById('defBox');
+      if (isChecked) {
+        box.classList.remove('hidden');
+      } else {
+        box.classList.add('hidden');
+        document.getElementById('formDefinition').value = '';
+      }
+    }
+
+    function toggleSourceBox() {
+      const isChecked = document.getElementById('toggleSource').checked;
+      const box = document.getElementById('sourceBox');
+      if (isChecked) {
+        box.classList.remove('hidden');
+      } else {
+        box.classList.add('hidden');
+        document.getElementById('formSource').value = '';
+      }
+    }
+
+    function toggleFadhilatBox() {
+      const isChecked = document.getElementById('toggleFadhilat').checked;
+      const box = document.getElementById('fadhilatBox');
+      if (isChecked) {
+        box.classList.remove('hidden');
+      } else {
+        box.classList.add('hidden');
+        document.getElementById('formFadhilat').value = '';
+      }
+    }
+
+    function renderTable() {
+      const tbody = document.getElementById('adminTableBody');
+      tbody.innerHTML = '';
+
+      let filtered = duasData.filter(d =>
+        d.title.toLowerCase().includes(currentSearch) ||
+        d.rumi.toLowerCase().includes(currentSearch) ||
+        d.meaning.toLowerCase().includes(currentSearch) ||
+        (Array.isArray(d.category) ? d.category.join(' ').toLowerCase() : d.category).includes(currentSearch)
+      ).slice().reverse();
+
+      if (filtered.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="5" class="p-6 text-center text-gray-500">Tiada rekod dijumpai.</td></tr>`;
+        return;
+      }
+
+      filtered.forEach(dua => {
+        const catStr = Array.isArray(dua.category) ? dua.category.join(' • ') : dua.category;
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-pink-500/5 transition-colors';
+        tr.innerHTML = `
+          <td class="p-4 font-mono text-green-400 font-bold">#${dua.id}</td>
+          <td class="p-4 font-semibold text-white">${dua.title}</td>
+          <td class="p-4"><span class="px-2 py-0.5 rounded bg-pink-500/10 text-pink-400 border border-pink-500/20 text-[10px]">${catStr}</span></td>
+          <td class="p-4 text-neonCyan">${dua.source}</td>
+          <td class="p-4 text-right space-x-2">
+            <button onclick="editDua(${dua.id})" class="px-3 py-1.5 rounded-lg bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 hover:bg-cyan-500/20 transition-all text-[10px]"><i class="fa-solid fa-pen"></i> Edit</button>
+            <button onclick="deleteDua(${dua.id})" class="px-3 py-1.5 rounded-lg bg-red-500/10 text-red-400 border border-red-500/30 hover:bg-red-500/20 transition-all text-[10px]"><i class="fa-solid fa-trash"></i> Padam</button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function openModal(id = null) {
+      document.getElementById('editId').value = '';
+      document.getElementById('duaForm').reset();
+      document.getElementById('toggleSource').checked = true;
+      document.getElementById('sourceBox').classList.remove('hidden');
+      document.getElementById('toggleDef').checked = false;
+      document.getElementById('defBox').classList.add('hidden');
+      document.getElementById('toggleFadhilat').checked = false;
+      document.getElementById('fadhilatBox').classList.add('hidden');
+      document.getElementById('modalTitle').innerText = 'Tambah Doa Baharu';
+
+      if (id !== null) {
+        const dua = duasData.find(d => d.id === id);
+        if (dua) {
+          document.getElementById('editId').value = dua.id;
+          document.getElementById('formTitle').value = dua.title;
+          document.getElementById('formCategory').value = Array.isArray(dua.category) ? dua.category.join(', ') : dua.category;
+
+          if (dua.showSource === false) {
+            document.getElementById('toggleSource').checked = false;
+            document.getElementById('sourceBox').classList.add('hidden');
+            document.getElementById('formSource').value = '';
+          } else {
+            document.getElementById('toggleSource').checked = true;
+            document.getElementById('sourceBox').classList.remove('hidden');
+            document.getElementById('formSource').value = dua.source || '';
+          }
+
+          document.getElementById('formArabic').value = dua.arabic;
+          document.getElementById('formRumi').value = dua.rumi;
+          document.getElementById('formMeaning').value = dua.meaning;
+
+          if (dua.definition) {
+            document.getElementById('toggleDef').checked = true;
+            document.getElementById('defBox').classList.remove('hidden');
+            document.getElementById('formDefinition').value = dua.definition;
+          }
+
+          if (dua.fadhilat) {
+            document.getElementById('toggleFadhilat').checked = true;
+            document.getElementById('fadhilatBox').classList.remove('hidden');
+            document.getElementById('formFadhilat').value = typeof dua.fadhilat === 'string' ? dua.fadhilat : (dua.fadhilat.meaning || '');
+          }
+
+          document.getElementById('modalTitle').innerText = `Sunting Doa #${dua.id}`;
+        }
+      }
+
+      const modal = document.getElementById('duaModal');
+      const box = document.getElementById('modalContentBox');
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modal.classList.remove('opacity-0');
+        box.classList.remove('scale-95');
+        box.classList.add('scale-100');
+      }, 10);
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('duaModal');
+      const box = document.getElementById('modalContentBox');
+      modal.classList.add('opacity-0');
+      box.classList.remove('scale-100');
+      box.classList.add('scale-95');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 300);
+    }
+
+    function editDua(id) {
+      openModal(id);
+    }
+
+    async function deleteDua(id) {
+      if (confirm(`Adakah anda pasti mahu memadam doa #${id}?`)) {
+        duasData = duasData.filter(d => d.id !== id);
+        renderTable();
+        document.getElementById('totalCount').innerText = duasData.length;
+        updateCategorySuggestions();
+        await saveAllToServer(false);
+      }
+    }
+
+    async function handleFormSubmit(e) {
+      e.preventDefault();
+      try {
+        const editId = document.getElementById('editId').value;
+        const title = document.getElementById('formTitle').value.trim();
+        const rawCat = document.getElementById('formCategory').value.trim();
+        const hasSource = document.getElementById('toggleSource').checked;
+        const source = hasSource ? document.getElementById('formSource').value.trim() : '';
+
+        const arabic = document.getElementById('formArabic').value.trim();
+        const rumi = document.getElementById('formRumi').value.trim();
+        const meaning = document.getElementById('formMeaning').value.trim();
+
+        const hasDef = document.getElementById('toggleDef').checked;
+        const definition = hasDef ? document.getElementById('formDefinition').value.trim() : null;
+
+        const hasFadhilat = document.getElementById('toggleFadhilat').checked;
+        const fadhilat = hasFadhilat ? document.getElementById('formFadhilat').value.trim() : null;
+
+        let category = rawCat.includes(',') ? rawCat.split(',').map(s => s.trim()).filter(Boolean) : rawCat;
+
+        let duaObj = {
+          id: editId ? parseInt(editId) : (duasData.length > 0 ? Math.max(...duasData.map(d => d.id)) + 1 : 1),
+          title, category, source, arabic, rumi, meaning,
+          showSource: hasSource
+        };
+        if (definition) {
+          duaObj.definition = definition;
+        }
+        if (fadhilat) {
+          duaObj.fadhilat = fadhilat;
+        }
+
+        if (editId) {
+          const index = duasData.findIndex(d => d.id === parseInt(editId));
+          if (index !== -1) {
+            duasData[index] = duaObj;
+          }
+        } else {
+          duasData.push(duaObj);
+        }
+
+        closeModal();
+        renderTable();
+        document.getElementById('totalCount').innerText = duasData.length;
+        updateCategorySuggestions();
+        await saveAllToServer(true);
+      } catch (err) {
+        console.error('Ralat menghantar borang:', err);
+        alert('❌ Ralat: ' + err.message);
+      }
+    }
+
+    async function saveAllToServer(showAlert = true) {
+      try {
+        const res = await fetch('/api/save', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ data: duasData, lang: adminLang }, null, 2)
+        });
+        const result = await res.json();
+        if (result.success) {
+          document.getElementById('syncStatus').innerText = 'Berjaya Diselaraskan';
+          document.getElementById('syncStatus').className = 'text-sm font-bold text-green-400 mt-2';
+          if (showAlert) alert(`✨ Doa berjaya disimpan dan dikemas kini ke fail bahasa (${adminLang})!`);
+        } else {
+          throw new Error(result.error || 'Gagal menyimpan');
+        }
+      } catch (err) {
+        console.error('Ralat simpan:', err);
+        document.getElementById('syncStatus').innerText = 'Ralat Menyimpan';
+        document.getElementById('syncStatus').className = 'text-sm font-bold text-red-400 mt-2';
+        if (showAlert) alert('❌ Gagal menyimpan ke pelayan: ' + err.message);
+      }
+    }
+  </script>
+
+  <!-- Footer Copyright -->
+  <footer class="max-w-6xl mx-auto px-4 mt-12 text-center text-[10px] text-gray-500 border-t border-pink-500/10 pt-4">
+    Himpunan Doa &copy; 2026. Hamba Allah SWT.
+  </footer>
+</body>
+</html>
