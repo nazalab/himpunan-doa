@@ -149,15 +149,16 @@
   </main>
 
   <!-- Add/Edit Modal -->
-  <div id="duaModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md hidden opacity-0 transition-opacity duration-300">
-    <div class="glass max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-3xl p-6 sm:p-8 relative border border-pink-500/50 shadow-glow transform scale-95 transition-transform duration-300" id="modalContentBox">
-      <button type="button" onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-neonPink bg-white/5 hover:bg-white/10 p-2.5 rounded-xl transition-all">
-        <i class="fa-solid fa-xmark text-lg"></i>
-      </button>
+  <div id="duaModal" class="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-6 bg-black/80 backdrop-blur-md hidden opacity-0 transition-opacity duration-300">
+    <div class="glass w-full max-w-5xl h-[95vh] flex flex-col rounded-3xl p-6 sm:p-8 relative border border-pink-500/50 shadow-glow transform scale-95 transition-transform duration-300 overflow-hidden" id="modalContentBox">
+      <div class="flex items-center justify-between pb-4 border-b border-pink-500/20 mb-4 flex-shrink-0">
+        <h2 id="modalTitle" class="text-xl font-bold text-white">Tambah Doa Baharu</h2>
+        <button type="button" onclick="closeModal()" class="text-gray-400 hover:text-neonPink bg-white/5 hover:bg-white/10 p-2.5 rounded-xl transition-all">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
 
-      <h2 id="modalTitle" class="text-xl font-bold text-white mb-4">Tambah Doa Baharu</h2>
-
-      <form id="duaForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+      <form id="duaForm" onsubmit="handleFormSubmit(event)" class="space-y-4 overflow-y-auto flex-1 pr-2">
         <input type="hidden" id="editId">
         <div>
           <label class="block text-[10px] uppercase tracking-wider text-white font-semibold mb-1">Tajuk Doa</label>
@@ -285,18 +286,29 @@
         document.getElementById('syncStatus').innerText = 'Reloading...';
         document.getElementById('syncStatus').className = 'text-sm font-bold text-yellow-400 mt-2';
 
-        const res = await fetch('duas.json?v=' + Date.now());
-        duasData = await res.json();
+        const storageKey = `duas_data_${adminLang}`;
+        const localData = localStorage.getItem(storageKey);
 
-        // Save to localStorage
-        localStorage.setItem('duas_data_ms', JSON.stringify(duasData));
+        if (localData) {
+          duasData = JSON.parse(localData);
+        } else {
+          let fileName = 'duas.json';
+          if (adminLang === 'en') fileName = 'en-duas.json';
+          else if (adminLang === 'cn') fileName = 'cn-duas.json';
+          else if (adminLang === 'ta') fileName = 'ta-duas.json';
 
-        document.getElementById('syncStatus').innerText = 'Reloaded';
+          const res = await fetch(fileName + '?v=' + Date.now());
+          duasData = await res.json();
+          localStorage.setItem(storageKey, JSON.stringify(duasData));
+        }
+
+        document.getElementById('syncStatus').innerText = 'Dimuat Semula';
         document.getElementById('syncStatus').className = 'text-sm font-bold text-green-400 mt-2';
         document.getElementById('totalCount').innerText = duasData.length;
         renderTable();
         updateCategorySuggestions();
         updateSourceSuggestions();
+        alert('✨ Senarai doa dimuat semula daripada simpanan anda.');
       } catch (err) {
         document.getElementById('syncStatus').innerText = 'Error: ' + err.message;
         document.getElementById('syncStatus').className = 'text-sm font-bold text-red-400 mt-2';
@@ -561,6 +573,9 @@
 
     async function handleFormSubmit(e) {
       e.preventDefault();
+      if (!confirm("Adakah anda mahu simpan?")) {
+        return;
+      }
       try {
         const editId = document.getElementById('editId').value;
         const title = document.getElementById('formTitle').value.trim();
