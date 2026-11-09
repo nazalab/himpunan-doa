@@ -28,12 +28,14 @@ jobs:
       run: |
         cd dist
         npm ci || npm install
-        
-    - name: Sync Capacitor
+
+    - name: Copy Capacitor config to root
       run: |
-        cd dist
-        npx cap sync android
-        
+        cp capacitor.config.json capacitor.config.json.bak 2>/dev/null || true
+
+    - name: Sync Capacitor
+      run: npx cap sync android
+
     - name: Build APK
       run: |
         cd android
