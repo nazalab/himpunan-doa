@@ -78,7 +78,7 @@
         </div>
         <div>
           <h1 class="text-xl font-bold tracking-wider bg-gradient-to-r from-neonPink via-pink-400 to-neonCyan bg-clip-text text-transparent">⚡ DASHBOARD ADMIN</h1>
-          <p class="text-xs text-gray-400">Pengurusan Data Himpunan Doa & Auto-Sync JSON</p>
+          <p class="text-xs text-gray-400">Pengurusan Data Himpunan Doa</p>
         </div>
       </div>
 
@@ -499,6 +499,9 @@
       document.getElementById('fadhilatBox').classList.add('hidden');
       document.getElementById('modalTitle').innerText = 'Tambah Doa Baharu';
 
+      const footerEl = document.querySelector('footer');
+      if (footerEl) footerEl.classList.add('hidden');
+
       if (id !== null) {
         const dua = duasData.find(d => d.id === id);
         if (dua) {
@@ -554,6 +557,8 @@
       box.classList.add('scale-95');
       setTimeout(() => {
         modal.classList.add('hidden');
+        const footerEl = document.querySelector('footer');
+        if (footerEl) footerEl.classList.remove('hidden');
       }, 300);
     }
 

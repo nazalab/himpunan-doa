@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ms" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit - Himpunan Doa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            neonPink: '#ff007f',
+            neonCyan: '#00f0ff',
+            darkBg: '#08090d',
+            cardBg: 'rgba(20, 21, 33, 0.65)',
+          },
+          boxShadow: {
+            neon: '0 0 15px rgba(255, 0, 127, 0.4), inset 0 0 15px rgba(255, 0, 127, 0.1)',
+            neonCyan: '0 0 15px rgba(0, 240, 255, 0.4), inset 0 0 15px rgba(0, 240, 255, 0.1)',
+            glow: '0 0 25px rgba(255, 0, 127, 0.6)',
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at 50% 10%, #1a0b2e 0%, #08090d 70%);
+      color: #f3f4f6;
+      min-height: 100vh;
+    }
+    .glass {
+      background: rgba(20, 21, 33, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 0, 127, 0.3);
+    }
+    .glass-card {
+      background: rgba(18, 20, 32, 0.6);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 0, 127, 0.2);
+    }
+  </style>
+</head>
+<body class="selection:bg-neonPink selection:text-white pb-16 flex flex-col min-h-screen">
+
+  <header class="sticky top-0 z-40 glass border-b border-pink-500/20 px-4 py-3 sm:px-8">
+    <div class="max-w-4xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-neonPink to-neonCyan flex items-center justify-center shadow-neon">
+          <i class="fa-solid fa-info text-white text-lg"></i>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold tracking-wider bg-gradient-to-r from-neonPink via-pink-400 to-neonCyan bg-clip-text text-transparent">ℹ️ KREDIT & MAKLUMAT</h1>
+          <p class="text-xs text-gray-400">Himpunan Doa & Zikir Pilihan</p>
+        </div>
+      </div>
+      <a href="index.html" class="px-4 py-2 rounded-xl text-[11px] font-semibold glass-card text-neonCyan border-cyan-500/30 hover:bg-cyan-500/20 transition-all flex items-center gap-2">
+        <i class="fa-solid fa-arrow-left"></i> Kembali
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 mt-8 flex-1 w-full">
+    <div class="glass-card rounded-3xl p-6 sm:p-8 space-y-6 border border-pink-500/30 shadow-glow">
+      <div class="text-center space-y-2">
+        <div class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-tr from-neonPink to-neonCyan flex items-center justify-center shadow-neon text-white text-2xl font-bold">
+          🤲
+        </div>
+        <h2 class="text-2xl font-bold text-white">Himpunan Doa Harian</h2>
+        <p class="text-xs text-neonPink font-mono">Platform Koleksi Doa & Zikir Sahih</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-pink-500/20">
+        <div class="glass-card rounded-2xl p-4">
+          <h3 class="text-sm font-bold text-neonCyan mb-1"><i class="fa-solid fa-user-shield mr-2"></i> Pembangunan</h3>
+          <p class="text-xs text-gray-300">Dibangunkan oleh Hamba Allah SWT untuk kegunaan ummah dan rujukan harian.</p>
+        </div>
+        <div class="glass-card rounded-2xl p-4">
+          <h3 class="text-sm font-bold text-neonPink mb-1"><i class="fa-solid fa-code mr-2"></i> Teknologi</h3>
+          <p class="text-xs text-gray-300">Dikuasakan oleh Capacitor, Tailwind CSS & PWA berserta Auto-Sync Admin Dashboard.</p>
+        </div>
+      </div>
+
+      <div class="glass-card rounded-2xl p-4 text-center">
+        <p class="text-xs text-gray-400">Semoga amal ibadah dan bacaan doa kita diterima oleh Allah SWT. Sebarkan kebaikan.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="max-w-4xl mx-auto px-4 mt-12 text-center text-[10px] text-gray-500 border-t border-pink-500/10 pt-4">
+    <p>Himpunan Doa &copy; 2026. Hamba Allah SWT.</p>
+  </footer>
+
+</body>
+</html>
