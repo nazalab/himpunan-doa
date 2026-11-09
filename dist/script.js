@@ -203,10 +203,10 @@ function renderDuas() {
           <p class="text-[22px] font-arabic text-white leading-loose line-clamp-2">${dua.arabic}</p>
         </div>
 
-        <!-- Bacaan Rumi Text (16px yellow, whitespace-pre-line) -->
+        <!-- Bacaan Rumi Text (12px yellow, whitespace-pre-line, 100 char limit) -->
         <div class="mb-3">
           <span class="text-[10px] text-neonCyan font-semibold uppercase tracking-wider block mb-0.5"><i class="fa-solid fa-font mr-1"></i> ${getUI('rumi')}</span>
-          <p class="text-[16px] text-yellow-400 italic font-light leading-relaxed line-clamp-2 whitespace-pre-line">${dua.rumi}</p>
+          <p class="text-[12px] text-yellow-400 italic font-light leading-relaxed line-clamp-2 whitespace-pre-line">${dua.rumi.substring(0, 100)}${dua.rumi.length > 100 ? '...' : ''}</p>
         </div>
       </div>
 

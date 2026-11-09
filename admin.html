@@ -121,12 +121,9 @@
     </div>
 
     <!-- Search & Filter -->
-    <div class="glass-card rounded-2xl p-4 mb-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div class="relative w-full sm:w-80">
+    <div class="glass-card rounded-2xl p-4 mb-6">
+      <div class="relative w-full sm:w-80 mx-auto">
         <input type="text" id="adminSearch" placeholder="🔍 Cari senarai doa (cth: Harian, Solat)..." class="w-full bg-black/40 border border-pink-500/30 rounded-xl px-4 py-2 text-[11px] text-gray-200 placeholder-gray-500 focus:outline-none focus:border-neonPink transition-all">
-      </div>
-      <div class="text-[11px] text-gray-400">
-        💡 Setiap penambahan/suntingan akan terus dikemas kini secara automatik ke <code id="currentDatasetFile" class="text-neonCyan font-bold">duas.json</code>.
       </div>
     </div>
 
@@ -153,7 +150,7 @@
 
   <!-- Add/Edit Modal -->
   <div id="duaModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md hidden opacity-0 transition-opacity duration-300">
-    <div class="glass max-w-2xl w-full max-h-[90vh] overflow-y-auto rounded-3xl p-6 sm:p-8 relative border border-pink-500/50 shadow-glow transform scale-95 transition-transform duration-300" id="modalContentBox">
+    <div class="glass max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-3xl p-6 sm:p-8 relative border border-pink-500/50 shadow-glow transform scale-95 transition-transform duration-300" id="modalContentBox">
       <button type="button" onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-neonPink bg-white/5 hover:bg-white/10 p-2.5 rounded-xl transition-all">
         <i class="fa-solid fa-xmark text-lg"></i>
       </button>
