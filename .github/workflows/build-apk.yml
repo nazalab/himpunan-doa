@@ -29,6 +29,31 @@ jobs:
     - name: Install dependencies
       run: npm ci || npm install
 
+    - name: Setup Version Environment
+      run: |
+        MMYY=$(date -u +"%m%y")
+        RUN_NUM="${{ github.run_number }}"
+        VERSION="v1.${MMYY}.${RUN_NUM}"
+        echo "VERSION=$VERSION" >> $GITHUB_ENV
+        echo "Generated version: $VERSION"
+
+    - name: Inject Dynamic Version into HTML
+      run: |
+        python3 -c "
+        import re
+        version = '${{ env.VERSION }}'
+        for path in ['index.html', 'dist/index.html']:
+            try:
+                with open(path, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                new_content = re.sub(r'id=\"appVersion\"[^>]*>[^<]*<\/[a-z]+>', f'id=\"appVersion\" class=\"mt-1 font-mono text-neonPink font-semibold\">{version}</p>', content)
+                with open(path, 'w', encoding='utf-8') as f:
+                    f.write(new_content)
+                print(f'Updated {path} with {version}')
+            except Exception as e:
+                print(f'Error: {e}')
+        "
+
     - name: Sync Capacitor
       run: npx cap sync android
 
@@ -48,8 +73,8 @@ jobs:
       if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
       uses: softprops/action-gh-release@v1
       with:
-        tag_name: v1.0.${{ github.run_number }}
-        name: Release v1.0.${{ github.run_number }}
+        tag_name: ${{ env.VERSION }}
+        name: Release ${{ env.VERSION }}
         files: android/app/build/outputs/apk/debug/app-debug.apk
         draft: false
         prerelease: false
