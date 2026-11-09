@@ -5,70 +5,46 @@ let currentPage = 1;
 const itemsPerPage = 10;
 let activeDuaId = null;
 let bookmarks = JSON.parse(localStorage.getItem('nurhira_bookmarks')) || [];
-let currentLang = localStorage.getItem('app_lang') || 'ms';
+let currentLang = 'ms';
+let modalToggles = JSON.parse(localStorage.getItem('modal_toggles')) || {
+  source: true,
+  definition: true,
+  rumi: true
+};
 
 const uiTexts = {
-  ms: {
-    source: "Sumber",
-    rumi: "Bacaan Rumi",
-    fullView: "Tekan untuk paparan penuh",
-    meaning: "Maksud",
-    fadhilat: "Fadhilat",
-    searchPlaceholder: "🔍 Cari doa...",
-    noDuas: "📭 Tiada doa dijumpai.",
-    copied: "✨ Doa berjaya disalin ke papan klip!"
-  },
-  en: {
-    source: "Source",
-    rumi: "Transliteration",
-    fullView: "Tap for full view",
-    meaning: "Meaning",
-    fadhilat: "Virtues",
-    searchPlaceholder: "🔍 Search dua...",
-    noDuas: "📭 No duas found.",
-    copied: "✨ Dua successfully copied to clipboard!"
-  },
-  cn: {
-    source: "来源",
-    rumi: "拉丁转写",
-    fullView: "点击查看完整",
-    meaning: "意译",
-    fadhilat: "美德功德",
-    searchPlaceholder: "🔍 搜索祈祷...",
-    noDuas: "📭 未找到祈祷文。",
-    copied: "✨ 祈祷文已成功复制到剪贴板！"
-  },
-  ta: {
-    source: "மூலம்",
-    rumi: "உச்சரிப்பு",
-    fullView: "முழு காட்சியைக் காண அழுத்தவும்",
-    meaning: "பொருள்",
-    fadhilat: "நன்மைகள்",
-    searchPlaceholder: "🔍 பிரார்த்தனையைத் தேடவும்...",
-    noDuas: "📭 பிரார்த்தனைகள் எதுவும் கிடைக்கவில்லை.",
-    copied: "✨ பிரார்த்தனை கிளிப்கோர்டில் வெற்றிகரமாக நகலெடுக்கப்பட்டது!"
-  }
+  source: "Sumber",
+  rumi: "Bacaan Rumi",
+  fullView: "Tekan untuk paparan penuh",
+  meaning: "Maksud",
+  fadhilat: "Fadhilat",
+  searchPlaceholder: "🔍 Cari doa...",
+  noDuas: "📭 Tiada doa dijumpai.",
+  copied: "✨ Doa berjaya disalin ke papan klip!"
 };
 
 function getUI(key) {
-  return (uiTexts[currentLang] && uiTexts[currentLang][key]) || uiTexts['ms'][key] || key;
+  return uiTexts[key] || key;
 }
-
-const translations = {
-  en: {},
-  cn: {},
-  ta: {}
-};
 
 async function loadDuasData() {
   try {
-    let fileName = 'duas.json';
-    if (currentLang === 'en') fileName = 'en-duas.json';
-    else if (currentLang === 'cn') fileName = 'cn-duas.json';
-    else if (currentLang === 'ta') fileName = 'ta-duas.json';
+    // Try localStorage first
+    const storageKey = `duas_data_${currentLang}`;
+    const localData = localStorage.getItem(storageKey);
 
-    const res = await fetch(fileName + '?v=' + Date.now());
-    duasData = await res.json();
+    if (localData) {
+      duasData = JSON.parse(localData);
+    } else {
+      // Fallback to JSON file
+      let fileName = 'duas.json';
+      if (currentLang === 'en') fileName = 'en-duas.json';
+      else if (currentLang === 'cn') fileName = 'cn-duas.json';
+      else if (currentLang === 'ta') fileName = 'ta-duas.json';
+
+      const res = await fetch(fileName + '?v=' + Date.now());
+      duasData = await res.json();
+    }
 
     const searchInput = document.getElementById('searchInput');
     if (searchInput) searchInput.placeholder = getUI('searchPlaceholder');
@@ -80,9 +56,6 @@ async function loadDuasData() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-  const langSel = document.getElementById('langSelect');
-  if (langSel) langSel.value = currentLang;
-
   await loadDuasData();
 
   // Search input listener
@@ -93,19 +66,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 });
 
-async function changeLanguage(lang) {
-  currentLang = lang;
-  localStorage.setItem('app_lang', lang);
-  await loadDuasData();
-  if (activeDuaId !== null) {
-    openModal(activeDuaId);
-  }
-}
-
 function getLocalized(val) {
   if (!val) return '';
   if (typeof val === 'object') {
-    return val[currentLang] || val['ms'] || Object.values(val)[0] || '';
+    return val['ms'] || Object.values(val)[0] || '';
   }
   return val;
 }
@@ -149,43 +113,8 @@ function renderDuas() {
   const container = document.getElementById('duasContainer');
   container.innerHTML = '';
 
-  const malayToEnCat = {
-    'Harian': 'Daily',
-    'Perlindungan': 'Protection',
-    'Kesihatan': 'Health',
-    'Ilmu': 'Knowledge',
-    'Wirid': 'Wird',
-    'Istigfar': 'Istighfar',
-    'Majlis': 'Gathering',
-    'Bacaan Solat': 'Prayer Recitations',
-    'Niat Solat': 'Prayer Intentions',
-    'Solat Fardu': 'Obligatory Prayer',
-    'Solat Sunat': 'Sunnah Prayer',
-    'Rawatib': 'Rawatib Sunnah'
-  };
-
-  const malayToCnCat = {
-    'Harian': '日常',
-    'Perlindungan': '庇护',
-    'Kesihatan': '健康',
-    'Ilmu': '求知',
-    'Wirid': '念词',
-    'Istigfar': '求饶恕',
-    'Majlis': '聚会',
-    'Bacaan Solat': '礼拜诵读',
-    'Niat Solat': '礼拜意图',
-    'Solat Fardu': '主命拜',
-    'Solat Sunat': '圣行拜',
-    'Rawatib': '辅行拜',
-    'Favorit': '收藏'
-  };
-
-  let filterCat = currentFilter;
-  if (currentLang === 'en' && malayToEnCat[currentFilter]) filterCat = malayToEnCat[currentFilter];
-  else if (currentLang === 'cn' && malayToCnCat[currentFilter]) filterCat = malayToCnCat[currentFilter];
-
   let filtered = duasData.filter(dua => {
-    const catMatch = Array.isArray(dua.category) ? dua.category.includes(filterCat) : dua.category === filterCat;
+    const catMatch = Array.isArray(dua.category) ? dua.category.includes(currentFilter) : dua.category === currentFilter;
     const matchesCat = currentFilter === 'Semua' ||
                        (currentFilter === 'Favorit' && bookmarks.includes(dua.id)) ||
                        catMatch;
@@ -357,6 +286,7 @@ function openModal(id) {
     modal.classList.remove('opacity-0');
     box.classList.remove('scale-95');
     box.classList.add('scale-100');
+    updateModalSections();
   }, 10);
 }
 
@@ -425,3 +355,40 @@ document.getElementById('duaModal').addEventListener('click', (e) => {
     closeModal();
   }
 });
+
+function toggleModalSection(section) {
+  modalToggles[section] = !modalToggles[section];
+  localStorage.setItem('modal_toggles', JSON.stringify(modalToggles));
+  updateModalSections();
+}
+
+function updateModalSections() {
+  const sourceSection = document.getElementById('modalSource').parentElement;
+  const defSection = document.getElementById('modalDefinitionSection');
+  const rumiSection = document.getElementById('modalRumiSection');
+  const sourceBtn = document.getElementById('toggleSourceBtn');
+  const defBtn = document.getElementById('toggleDefBtn');
+  const rumiBtn = document.getElementById('toggleRumiBtn');
+
+  // Update visibility
+  if (sourceSection) {
+    sourceSection.style.display = modalToggles.source ? 'block' : 'none';
+  }
+  if (defSection) {
+    defSection.style.display = modalToggles.definition ? 'block' : 'none';
+  }
+  if (rumiSection) {
+    rumiSection.style.display = modalToggles.rumi ? 'block' : 'none';
+  }
+
+  // Update button opacity
+  if (sourceBtn) {
+    sourceBtn.style.opacity = modalToggles.source ? '1' : '0.4';
+  }
+  if (defBtn) {
+    defBtn.style.opacity = modalToggles.definition ? '1' : '0.4';
+  }
+  if (rumiBtn) {
+    rumiBtn.style.opacity = modalToggles.rumi ? '1' : '0.4';
+  }
+}

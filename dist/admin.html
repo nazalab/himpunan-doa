@@ -83,13 +83,7 @@
       </div>
 
       <div class="flex items-center gap-3">
-        <select id="adminLangSelect" onchange="changeAdminLang(this.value)" class="bg-black/40 border border-pink-500/30 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-neonPink h-10">
-          <option value="ms">BM (Melayu)</option>
-          <option value="en">EN (English)</option>
-          <option value="cn">CN (Mandarin)</option>
-          <option value="ta">TA (Tamil)</option>
-        </select>
-        <a href="index.html" class="px-4 py-2 rounded-xl text-xs font-semibold glass-card text-neonCyan border-cyan-500/30 hover:bg-cyan-500/20 transition-all flex items-center gap-2">
+        <a href="index.html" class="px-4 py-2 rounded-xl text-[11px] font-semibold glass-card text-neonCyan border-cyan-500/30 hover:bg-cyan-500/20 transition-all flex items-center gap-2">
           <i class="fa-solid fa-arrow-left"></i> Kembali ke App
         </a>
       </div>
@@ -129,9 +123,9 @@
     <!-- Search & Filter -->
     <div class="glass-card rounded-2xl p-4 mb-6 flex flex-col sm:flex-row items-center justify-between gap-4">
       <div class="relative w-full sm:w-80">
-        <input type="text" id="adminSearch" placeholder="🔍 Cari senarai doa (cth: Harian, Solat)..." class="w-full bg-black/40 border border-pink-500/30 rounded-xl px-4 py-2 text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:border-neonPink transition-all">
+        <input type="text" id="adminSearch" placeholder="🔍 Cari senarai doa (cth: Harian, Solat)..." class="w-full bg-black/40 border border-pink-500/30 rounded-xl px-4 py-2 text-[11px] text-gray-200 placeholder-gray-500 focus:outline-none focus:border-neonPink transition-all">
       </div>
-      <div class="text-xs text-gray-400">
+      <div class="text-[11px] text-gray-400">
         💡 Setiap penambahan/suntingan akan terus dikemas kini secara automatik ke <code id="currentDatasetFile" class="text-neonCyan font-bold">duas.json</code>.
       </div>
     </div>
@@ -246,12 +240,8 @@
     let currentSearch = '';
     let existingTags = [];
     let existingSources = [];
-    let adminLang = 'ms';
 
     document.addEventListener('DOMContentLoaded', async () => {
-      const langSel = document.getElementById('adminLangSelect');
-      if (langSel) langSel.value = adminLang;
-
       await loadDuas();
 
       document.getElementById('adminSearch').addEventListener('input', (e) => {
@@ -260,23 +250,28 @@
       });
     });
 
-    async function changeAdminLang(lang) {
-      adminLang = lang;
-      await loadDuas();
-    }
-
     async function loadDuas() {
       try {
-        let fileName = 'duas.json';
-        if (adminLang === 'en') fileName = 'en-duas.json';
-        else if (adminLang === 'cn') fileName = 'cn-duas.json';
-        else if (adminLang === 'ta') fileName = 'ta-duas.json';
+        // Try localStorage first
+        const storageKey = `duas_data_${adminLang}`;
+        const localData = localStorage.getItem(storageKey);
 
-        const res = await fetch(fileName + '?v=' + Date.now());
-        duasData = await res.json();
+        if (localData) {
+          duasData = JSON.parse(localData);
+        } else {
+          // Fallback to JSON file
+          let fileName = 'duas.json';
+          if (adminLang === 'en') fileName = 'en-duas.json';
+          else if (adminLang === 'cn') fileName = 'cn-duas.json';
+          else if (adminLang === 'ta') fileName = 'ta-duas.json';
+
+          const res = await fetch(fileName + '?v=' + Date.now());
+          duasData = await res.json();
+        }
+
         document.getElementById('totalCount').innerText = duasData.length;
         const fileEl = document.getElementById('currentDatasetFile');
-        if (fileEl) fileEl.innerText = fileName;
+        if (fileEl) fileEl.innerText = `localStorage (${adminLang})`;
         renderTable();
         updateCategorySuggestions();
         updateSourceSuggestions();
@@ -598,26 +593,18 @@
 
     async function saveAllToServer(showAlert = true) {
       try {
-        const res = await fetch('/api/save', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({ data: duasData, lang: adminLang }, null, 2)
-        });
-        const result = await res.json();
-        if (result.success) {
-          document.getElementById('syncStatus').innerText = 'Berjaya Diselaraskan';
-          document.getElementById('syncStatus').className = 'text-sm font-bold text-green-400 mt-2';
-          if (showAlert) alert(`✨ Doa berjaya disimpan dan dikemas kini ke fail bahasa (${adminLang})!`);
-        } else {
-          throw new Error(result.error || 'Gagal menyimpan');
-        }
+        // Save to localStorage with language prefix
+        const storageKey = `duas_data_${adminLang}`;
+        localStorage.setItem(storageKey, JSON.stringify(duasData, null, 2));
+
+        document.getElementById('syncStatus').innerText = 'Berjaya Disimpan';
+        document.getElementById('syncStatus').className = 'text-sm font-bold text-green-400 mt-2';
+        if (showAlert) alert(`✨ Doa berjaya disimpan ke localStorage (${adminLang})!`);
       } catch (err) {
         console.error('Ralat simpan:', err);
         document.getElementById('syncStatus').innerText = 'Ralat Menyimpan';
         document.getElementById('syncStatus').className = 'text-sm font-bold text-red-400 mt-2';
-        if (showAlert) alert('❌ Gagal menyimpan ke pelayan: ' + err.message);
+        if (showAlert) alert('❌ Gagal menyimpan: ' + err.message);
       }
     }
   </script>

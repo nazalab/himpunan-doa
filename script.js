@@ -6,6 +6,11 @@ const itemsPerPage = 10;
 let activeDuaId = null;
 let bookmarks = JSON.parse(localStorage.getItem('nurhira_bookmarks')) || [];
 let currentLang = 'ms';
+let modalToggles = JSON.parse(localStorage.getItem('modal_toggles')) || {
+  source: true,
+  definition: true,
+  rumi: true
+};
 
 const uiTexts = {
   source: "Sumber",
@@ -281,6 +286,7 @@ function openModal(id) {
     modal.classList.remove('opacity-0');
     box.classList.remove('scale-95');
     box.classList.add('scale-100');
+    updateModalSections();
   }, 10);
 }
 
@@ -349,3 +355,40 @@ document.getElementById('duaModal').addEventListener('click', (e) => {
     closeModal();
   }
 });
+
+function toggleModalSection(section) {
+  modalToggles[section] = !modalToggles[section];
+  localStorage.setItem('modal_toggles', JSON.stringify(modalToggles));
+  updateModalSections();
+}
+
+function updateModalSections() {
+  const sourceSection = document.getElementById('modalSource').parentElement;
+  const defSection = document.getElementById('modalDefinitionSection');
+  const rumiSection = document.getElementById('modalRumiSection');
+  const sourceBtn = document.getElementById('toggleSourceBtn');
+  const defBtn = document.getElementById('toggleDefBtn');
+  const rumiBtn = document.getElementById('toggleRumiBtn');
+
+  // Update visibility
+  if (sourceSection) {
+    sourceSection.style.display = modalToggles.source ? 'block' : 'none';
+  }
+  if (defSection) {
+    defSection.style.display = modalToggles.definition ? 'block' : 'none';
+  }
+  if (rumiSection) {
+    rumiSection.style.display = modalToggles.rumi ? 'block' : 'none';
+  }
+
+  // Update button opacity
+  if (sourceBtn) {
+    sourceBtn.style.opacity = modalToggles.source ? '1' : '0.4';
+  }
+  if (defBtn) {
+    defBtn.style.opacity = modalToggles.definition ? '1' : '0.4';
+  }
+  if (rumiBtn) {
+    rumiBtn.style.opacity = modalToggles.rumi ? '1' : '0.4';
+  }
+}
