@@ -240,12 +240,8 @@
     let currentSearch = '';
     let existingTags = [];
     let existingSources = [];
-    let adminLang = 'ms';
 
     document.addEventListener('DOMContentLoaded', async () => {
-      const langSel = document.getElementById('adminLangSelect');
-      if (langSel) langSel.value = adminLang;
-
       await loadDuas();
 
       document.getElementById('adminSearch').addEventListener('input', (e) => {
@@ -254,23 +250,28 @@
       });
     });
 
-    async function changeAdminLang(lang) {
-      adminLang = lang;
-      await loadDuas();
-    }
-
     async function loadDuas() {
       try {
-        let fileName = 'duas.json';
-        if (adminLang === 'en') fileName = 'en-duas.json';
-        else if (adminLang === 'cn') fileName = 'cn-duas.json';
-        else if (adminLang === 'ta') fileName = 'ta-duas.json';
+        // Try localStorage first
+        const storageKey = `duas_data_${adminLang}`;
+        const localData = localStorage.getItem(storageKey);
 
-        const res = await fetch(fileName + '?v=' + Date.now());
-        duasData = await res.json();
+        if (localData) {
+          duasData = JSON.parse(localData);
+        } else {
+          // Fallback to JSON file
+          let fileName = 'duas.json';
+          if (adminLang === 'en') fileName = 'en-duas.json';
+          else if (adminLang === 'cn') fileName = 'cn-duas.json';
+          else if (adminLang === 'ta') fileName = 'ta-duas.json';
+
+          const res = await fetch(fileName + '?v=' + Date.now());
+          duasData = await res.json();
+        }
+
         document.getElementById('totalCount').innerText = duasData.length;
         const fileEl = document.getElementById('currentDatasetFile');
-        if (fileEl) fileEl.innerText = fileName;
+        if (fileEl) fileEl.innerText = `localStorage (${adminLang})`;
         renderTable();
         updateCategorySuggestions();
         updateSourceSuggestions();
@@ -592,26 +593,18 @@
 
     async function saveAllToServer(showAlert = true) {
       try {
-        const res = await fetch('/api/save', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({ data: duasData, lang: adminLang }, null, 2)
-        });
-        const result = await res.json();
-        if (result.success) {
-          document.getElementById('syncStatus').innerText = 'Berjaya Diselaraskan';
-          document.getElementById('syncStatus').className = 'text-sm font-bold text-green-400 mt-2';
-          if (showAlert) alert(`✨ Doa berjaya disimpan dan dikemas kini ke fail bahasa (${adminLang})!`);
-        } else {
-          throw new Error(result.error || 'Gagal menyimpan');
-        }
+        // Save to localStorage with language prefix
+        const storageKey = `duas_data_${adminLang}`;
+        localStorage.setItem(storageKey, JSON.stringify(duasData, null, 2));
+
+        document.getElementById('syncStatus').innerText = 'Berjaya Disimpan';
+        document.getElementById('syncStatus').className = 'text-sm font-bold text-green-400 mt-2';
+        if (showAlert) alert(`✨ Doa berjaya disimpan ke localStorage (${adminLang})!`);
       } catch (err) {
         console.error('Ralat simpan:', err);
         document.getElementById('syncStatus').innerText = 'Ralat Menyimpan';
         document.getElementById('syncStatus').className = 'text-sm font-bold text-red-400 mt-2';
-        if (showAlert) alert('❌ Gagal menyimpan ke pelayan: ' + err.message);
+        if (showAlert) alert('❌ Gagal menyimpan: ' + err.message);
       }
     }
   </script>
