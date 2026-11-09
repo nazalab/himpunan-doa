@@ -234,6 +234,7 @@
 
   <script>
     let duasData = [];
+    let adminLang = 'ms';
     let currentSearch = '';
     let existingTags = [];
     let existingSources = [];
@@ -617,9 +618,20 @@
         const storageKey = `duas_data_${adminLang}`;
         localStorage.setItem(storageKey, JSON.stringify(duasData, null, 2));
 
+        // Sync to server JSON file
+        try {
+          await fetch('/api/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ data: duasData, lang: adminLang })
+          });
+        } catch (e) {
+          console.warn('Server sync skipped/offline:', e);
+        }
+
         document.getElementById('syncStatus').innerText = 'Berjaya Disimpan';
         document.getElementById('syncStatus').className = 'text-sm font-bold text-green-400 mt-2';
-        if (showAlert) alert(`✨ Doa berjaya disimpan ke localStorage (${adminLang})!`);
+        if (showAlert) alert(`✨ Doa berjaya disimpan & disync (${adminLang})!`);
       } catch (err) {
         console.error('Ralat simpan:', err);
         document.getElementById('syncStatus').innerText = 'Ralat Menyimpan';
