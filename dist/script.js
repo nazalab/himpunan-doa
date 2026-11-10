@@ -9,7 +9,9 @@ let currentLang = 'ms';
 let modalToggles = JSON.parse(localStorage.getItem('modal_toggles')) || {
   source: true,
   definition: true,
-  rumi: true
+  rumi: true,
+  meaning: true,
+  fadhilat: true
 };
 
 const uiTexts = {
@@ -366,9 +368,14 @@ function updateModalSections() {
   const sourceSection = document.getElementById('modalSource').parentElement;
   const defSection = document.getElementById('modalDefinitionSection');
   const rumiSection = document.getElementById('modalRumiSection');
+  const meaningSection = document.getElementById('modalMeaningBlock');
+  const fadhilatSection = document.getElementById('modalFadhilatContainer');
+
   const sourceBtn = document.getElementById('toggleSourceBtn');
   const defBtn = document.getElementById('toggleDefBtn');
   const rumiBtn = document.getElementById('toggleRumiBtn');
+  const meaningBtn = document.getElementById('toggleMeaningBtn');
+  const fadhilatBtn = document.getElementById('toggleFadhilatBtn');
 
   // Update visibility
   if (sourceSection) {
@@ -380,15 +387,24 @@ function updateModalSections() {
   if (rumiSection) {
     rumiSection.style.display = modalToggles.rumi ? 'block' : 'none';
   }
+  if (meaningSection) {
+    meaningSection.style.display = modalToggles.meaning ? 'block' : 'none';
+  }
+  if (fadhilatSection) {
+    const dua = duasData.find(d => d.id === activeDuaId);
+    if (dua && dua.fadhilat && modalToggles.fadhilat) {
+      fadhilatSection.style.display = 'block';
+      fadhilatSection.classList.remove('hidden');
+    } else {
+      fadhilatSection.style.display = 'none';
+      fadhilatSection.classList.add('hidden');
+    }
+  }
 
   // Update button opacity
-  if (sourceBtn) {
-    sourceBtn.style.opacity = modalToggles.source ? '1' : '0.4';
-  }
-  if (defBtn) {
-    defBtn.style.opacity = modalToggles.definition ? '1' : '0.4';
-  }
-  if (rumiBtn) {
-    rumiBtn.style.opacity = modalToggles.rumi ? '1' : '0.4';
-  }
+  if (sourceBtn) sourceBtn.style.opacity = modalToggles.source ? '1' : '0.4';
+  if (defBtn) defBtn.style.opacity = modalToggles.definition ? '1' : '0.4';
+  if (rumiBtn) rumiBtn.style.opacity = modalToggles.rumi ? '1' : '0.4';
+  if (meaningBtn) meaningBtn.style.opacity = modalToggles.meaning ? '1' : '0.4';
+  if (fadhilatBtn) fadhilatBtn.style.opacity = modalToggles.fadhilat ? '1' : '0.4';
 }

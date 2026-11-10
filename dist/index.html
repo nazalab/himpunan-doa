@@ -184,7 +184,7 @@
       </div>
 
       <!-- Toggle Buttons -->
-      <div class="flex items-center gap-2 mb-4 pb-3 border-b border-pink-500/10">
+      <div class="flex items-center flex-wrap gap-2 mb-4 pb-3 border-b border-pink-500/10">
         <button onclick="toggleModalSection('source')" id="toggleSourceBtn" class="glass-card px-3 py-1.5 rounded-lg text-[10px] font-semibold text-neonCyan border-cyan-500/30 hover:bg-cyan-500/20 transition-all flex items-center gap-1.5" title="Toggle Sumber">
           <i class="fa-solid fa-book-bookmark"></i> Sumber
         </button>
@@ -193,6 +193,12 @@
         </button>
         <button onclick="toggleModalSection('rumi')" id="toggleRumiBtn" class="glass-card px-3 py-1.5 rounded-lg text-[10px] font-semibold text-yellow-400 border-yellow-500/30 hover:bg-yellow-500/20 transition-all flex items-center gap-1.5" title="Toggle Bacaan Rumi">
           <i class="fa-solid fa-font"></i> Rumi
+        </button>
+        <button onclick="toggleModalSection('meaning')" id="toggleMeaningBtn" class="glass-card px-3 py-1.5 rounded-lg text-[10px] font-semibold text-pink-400 border-pink-500/30 hover:bg-pink-500/20 transition-all flex items-center gap-1.5" title="Toggle Maksud">
+          <i class="fa-solid fa-language"></i> Maksud
+        </button>
+        <button onclick="toggleModalSection('fadhilat')" id="toggleFadhilatBtn" class="glass-card px-3 py-1.5 rounded-lg text-[10px] font-semibold text-yellow-300 border-yellow-500/30 hover:bg-yellow-500/20 transition-all flex items-center gap-1.5" title="Toggle Fadhilat">
+          <i class="fa-solid fa-star"></i> Fadhilat
         </button>
       </div>
 
@@ -209,8 +215,10 @@
 
       <!-- Meaning (12px) -->
       <div class="mb-6">
-        <span id="modalMeaningLabel" class="text-[10px] text-neonPink font-semibold uppercase tracking-wider block mb-1"><i class="fa-solid fa-language mr-1"></i> Maksud</span>
-        <p id="modalMeaning" class="text-[12px] text-gray-300 leading-relaxed"></p>
+        <div id="modalMeaningBlock">
+          <span id="modalMeaningLabel" class="text-[10px] text-neonPink font-semibold uppercase tracking-wider block mb-1"><i class="fa-solid fa-language mr-1"></i> Maksud</span>
+          <p id="modalMeaning" class="text-[12px] text-gray-300 leading-relaxed"></p>
+        </div>
         <div id="modalDefinitionSection">
           <p id="modalRawatibDef" class="text-[12px] text-white mt-2 hidden"></p>
         </div>
