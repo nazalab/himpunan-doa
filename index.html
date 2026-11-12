@@ -245,6 +245,36 @@
   <!-- Script logic -->
   <script src="script.js?v=999"></script>
 
+  <!-- Floating Navigation Bar (Bottom Center) -->
+  <div class="fixed bottom-4 left-0 right-0 z-40 flex justify-center px-4 pointer-events-none">
+    <div class="glass px-4 py-2 rounded-2xl shadow-glow flex items-center gap-3 border border-pink-500/40 pointer-events-auto backdrop-blur-xl">
+      <button onclick="toggleCategoryMenu()" class="flex flex-col items-center gap-0.5 px-3 py-1 text-gray-300 hover:text-neonPink transition-colors text-[10px] font-semibold" title="Menu Kategori">
+        <i class="fa-solid fa-list text-sm text-neonPink"></i>
+        <span>Kategori</span>
+      </button>
+      <div class="w-px h-6 bg-pink-500/20"></div>
+      <button onclick="selectCategory('Semua'); window.scrollTo({top: 0, behavior: 'smooth'});" class="flex flex-col items-center gap-0.5 px-3 py-1 text-gray-300 hover:text-white transition-colors text-[10px] font-semibold" title="Semua Doa">
+        <i class="fa-solid fa-house text-sm text-neonCyan"></i>
+        <span>Utama</span>
+      </button>
+      <div class="w-px h-6 bg-pink-500/20"></div>
+      <button onclick="selectCategory('Favorit'); window.scrollTo({top: 0, behavior: 'smooth'});" class="flex flex-col items-center gap-0.5 px-3 py-1 text-gray-300 hover:text-yellow-400 transition-colors text-[10px] font-semibold" title="Doa Favorit">
+        <i class="fa-solid fa-star text-sm text-yellow-400"></i>
+        <span>Favorit</span>
+      </button>
+      <div class="w-px h-6 bg-pink-500/20"></div>
+      <a href="credit.html" class="flex flex-col items-center gap-0.5 px-3 py-1 text-gray-300 hover:text-yellow-300 transition-colors text-[10px] font-semibold" title="Kredit & Info">
+        <span class="font-bold text-sm font-mono text-yellow-400">i</span>
+        <span>Kredit</span>
+      </a>
+      <div class="w-px h-6 bg-pink-500/20"></div>
+      <a href="admin.html" class="flex flex-col items-center gap-0.5 px-3 py-1 text-gray-300 hover:text-neonCyan transition-colors text-[10px] font-semibold" title="Admin">
+        <i class="fa-solid fa-gear text-sm text-neonCyan"></i>
+        <span>Admin</span>
+      </a>
+    </div>
+  </div>
+
   <!-- Footer Copyright -->
   <footer class="max-w-4xl mx-auto px-4 mt-12 text-center text-[10px] text-gray-500 border-t border-pink-500/10 pt-4">
     <p>Himpunan Doa &copy; 2026. Hamba Allah SWT.</p>
