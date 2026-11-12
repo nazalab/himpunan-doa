@@ -112,6 +112,25 @@ async function loadDuasData() {
 document.addEventListener('DOMContentLoaded', async () => {
   await loadDuasData();
 
+  // Lifecycle Observer: Restore scroll position
+  const savedScrollY = sessionStorage.getItem('app_scroll_y');
+  if (savedScrollY) {
+    setTimeout(() => {
+      window.scrollTo(0, parseInt(savedScrollY, 10));
+    }, 100);
+  }
+
+  // Lifecycle Observer: Save scroll position on unload/visibility change
+  window.addEventListener('beforeunload', () => {
+    sessionStorage.setItem('app_scroll_y', window.scrollY);
+  });
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') {
+      sessionStorage.setItem('app_scroll_y', window.scrollY);
+    }
+  });
+
   // Search input listener
   document.getElementById('searchInput').addEventListener('input', (e) => {
     currentSearch = e.target.value.toLowerCase();
