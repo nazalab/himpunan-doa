@@ -1,0 +1,35 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at 50% 10%, #1a0b2e 0%, #08090d 70%);
+  color: #f3f4f6;
+  min-height: 100vh;
+}
+.glass {
+  background: rgba(20, 21, 33, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 0, 127, 0.25);
+}
+.glass-card {
+  background: rgba(18, 20, 32, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 0, 127, 0.18);
+  transition: all 0.3s ease;
+}
+.glass-card:hover {
+  border-color: rgba(255, 0, 127, 0.6);
+  box-shadow: 0 0 20px rgba(255, 0, 127, 0.3);
+  transform: translateY(-2px);
+}
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #08090d;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff007f;
+  border-radius: 3px;
+}

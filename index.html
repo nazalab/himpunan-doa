@@ -33,43 +33,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- FontAwesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle at 50% 10%, #1a0b2e 0%, #08090d 70%);
-      color: #f3f4f6;
-      min-height: 100vh;
-    }
-    .glass {
-      background: rgba(20, 21, 33, 0.7);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 0, 127, 0.25);
-    }
-    .glass-card {
-      background: rgba(18, 20, 32, 0.5);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 0, 127, 0.18);
-      transition: all 0.3s ease;
-    }
-    .glass-card:hover {
-      border-color: rgba(255, 0, 127, 0.6);
-      box-shadow: 0 0 20px rgba(255, 0, 127, 0.3);
-      transform: translateY(-2px);
-    }
-    ::-webkit-scrollbar {
-      height: 6px;
-      width: 6px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #08090d;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #ff007f;
-      border-radius: 3px;
-    }
-  </style>
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="selection:bg-neonPink selection:text-white pb-12">
 
@@ -276,9 +241,9 @@
   </div>
 
   <!-- Footer Copyright -->
-  <footer class="max-w-4xl mx-auto px-4 mt-12 text-center text-[10px] text-gray-500 border-t border-pink-500/10 pt-4">
+  <header class="max-w-4xl mx-auto px-4 mt-12 text-center text-[10px] text-gray-500 border-t border-pink-500/10 pt-4">
     <p>Himpunan Doa &copy; 2026. Hamba Allah SWT.</p>
     <p class="mt-1 font-mono text-neonPink font-semibold" id="appVersion">v1.1126.03</p>
-  </footer>
+  </header>
 </body>
 </html>
