@@ -29,24 +29,76 @@ function getUI(key) {
   return uiTexts[key] || key;
 }
 
+// IndexedDB Helper for Notes-like local storage
+const DB_NAME = 'HimpunanDoaDB';
+const STORE_NAME = 'duas_store';
+const DB_VERSION = 1;
+
+function openDB() {
+  return new Promise((resolve, reject) => {
+    const request = indexedDB.open(DB_NAME, DB_VERSION);
+    request.onerror = () => reject(request.error);
+    request.onsuccess = () => resolve(request.result);
+    request.onupgradeneeded = (event) => {
+      const db = event.target.result;
+      if (!db.objectStoreNames.contains(STORE_NAME)) {
+        db.createObjectStore(STORE_NAME, { keyPath: 'lang' });
+      }
+    };
+  });
+}
+
+async function getFromIDB(lang) {
+  try {
+    const db = await openDB();
+    return new Promise((resolve, reject) => {
+      const transaction = db.transaction(STORE_NAME, 'readonly');
+      const store = transaction.objectStore(STORE_NAME);
+      const request = store.get(lang);
+      request.onsuccess = () => resolve(request.result ? request.result.data : null);
+      request.onerror = () => reject(request.error);
+    });
+  } catch (e) {
+    console.warn('IDB get error:', e);
+    return null;
+  }
+}
+
+async function saveToIDB(lang, data) {
+  try {
+    const db = await openDB();
+    return new Promise((resolve, reject) => {
+      const transaction = db.transaction(STORE_NAME, 'readwrite');
+      const store = transaction.objectStore(STORE_NAME);
+      const request = store.put({ lang, data });
+      request.onsuccess = () => resolve(true);
+      request.onerror = () => reject(request.error);
+    });
+  } catch (e) {
+    console.warn('IDB save error:', e);
+  }
+}
+
 async function loadDuasData() {
   try {
-    // Try localStorage first
-    const storageKey = `duas_data_${currentLang}`;
-    const localData = localStorage.getItem(storageKey);
+    // 1. Try IndexedDB first (Notes-like fast local storage)
+    let data = await getFromIDB(currentLang);
 
-    if (localData) {
-      duasData = JSON.parse(localData);
-    } else {
-      // Fallback to JSON file
+    if (!data) {
+      // 2. Fallback to JSON file fetch
       let fileName = 'duas.json';
       if (currentLang === 'en') fileName = 'en-duas.json';
       else if (currentLang === 'cn') fileName = 'cn-duas.json';
       else if (currentLang === 'ta') fileName = 'ta-duas.json';
 
       const res = await fetch(fileName + '?v=' + Date.now());
-      duasData = await res.json();
+      data = await res.json();
+
+      // Save to IndexedDB for future offline instant load
+      await saveToIDB(currentLang, data);
     }
+
+    duasData = data;
 
     const searchInput = document.getElementById('searchInput');
     if (searchInput) searchInput.placeholder = getUI('searchPlaceholder');
@@ -371,7 +423,7 @@ function updateModalSections() {
   const meaningSection = document.getElementById('modalMeaningBlock');
   const fadhilatSection = document.getElementById('modalFadhilatContainer');
 
-  const sourceBtn = document.getElementById('toggleSourceBtn');
+  const sourceBtn = document.getElementById('toggleSourceDbBtn') || document.getElementById('toggleSourceBtn');
   const defBtn = document.getElementById('toggleDefBtn');
   const rumiBtn = document.getElementById('toggleRumiBtn');
   const meaningBtn = document.getElementById('toggleMeaningBtn');
